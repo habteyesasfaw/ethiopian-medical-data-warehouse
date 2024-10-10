@@ -20,7 +20,7 @@ def clean_data(input_file, output_file):
         logging.info("Removing duplicates")
         data.drop_duplicates(inplace=True)
         
-        # Handle missing values (example: filling missing values)
+        # Handle missing values (example: filling missing value)
         logging.info("Handling missing values")
         data.fillna("Unknown", inplace=True)
         
