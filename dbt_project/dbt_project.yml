@@ -1,0 +1,24 @@
+name: 'ethiopian_medical_businesses'
+version: '1.0'
+
+profile: 'default'
+
+# Define model locations
+model-paths: ["models"]
+
+# Snapshot location
+snapshot-paths: ["snapshots"]
+
+# Test location
+test-paths: ["tests"]
+
+# Database configurations (Assuming you're using PostgreSQL)
+target:
+  name: 'prod'
+  type: 'postgres'
+  host: 'localhost'
+  user: 'postgres'
+  password: 'root'
+  port: 5432
+  dbname: 'EthMedHub'
+  schema: 'public'
