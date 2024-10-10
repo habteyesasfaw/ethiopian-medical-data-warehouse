@@ -1,9 +1,12 @@
 import csv
 import os
 import asyncio
+import random
+import time
 from telethon import TelegramClient
 from dotenv import load_dotenv
-from logging import getLogger
+import logging
+
 # Load environment variables
 load_dotenv('.env')
 api_id = os.getenv('TG_API_ID')
@@ -11,7 +14,26 @@ api_hash = os.getenv('TG_API_HASH')
 phone = os.getenv('TG_PHONE')
 
 # Initialize logger
-logger = getLogger('Telegram_Scraper')
+def setup_logger():
+    logger = logging.getLogger('Telegram_Scraper')
+    logger.setLevel(logging.INFO)
+
+    # Create a file handler for logging
+    file_handler = logging.FileHandler('scraper_log.log')
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(formatter)
+
+    # Add the file handler to the logger
+    logger.addHandler(file_handler)
+
+    # Optionally, you can add a console handler for real-time feedback
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+    logger.addHandler(console_handler)
+
+    return logger
+
+logger = setup_logger()
 
 # Function to scrape data from a single channel
 async def scrape_channel(client, channel_username, writer, media_dir):
@@ -19,7 +41,7 @@ async def scrape_channel(client, channel_username, writer, media_dir):
         entity = await client.get_entity(channel_username)
         channel_title = entity.title  # Extract the channel's title
         logger.info(f"Scraping started for {channel_title} ({channel_username})")
-        
+
         async for message in client.iter_messages(entity, limit=10000):
             media_path = None
             if message.media and hasattr(message.media, 'photo'):
@@ -29,10 +51,13 @@ async def scrape_channel(client, channel_username, writer, media_dir):
                 # Download the media to the specified directory if it's a photo
                 await client.download_media(message.media, media_path)
                 logger.info(f"Downloaded media from message ID {message.id} in {channel_username}")
-            
+
             # Write the channel title along with other data
             writer.writerow([channel_title, channel_username, message.id, message.message, message.date, media_path])
-        
+
+            # Introduce a random delay to avoid hitting Telegram's rate limits
+            await asyncio.sleep(random.uniform(1, 3))  # Delay between 1 to 3 seconds
+
         logger.info(f"Scraping completed for {channel_title} ({channel_username})")
     
     except Exception as e:

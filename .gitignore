@@ -20,8 +20,7 @@ data/
 *.txt
 *.xlsx
 data/photos/
-*.JPG
-
+*.jpg
 #Model
 models/
 *.json
