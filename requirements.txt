@@ -1,12 +1,22 @@
-pandas
-numpy
-matplotlib
-seaborn
-TextBlob
-scikit-learn
-nltk
-spacy
-swifter
-pandas_ta
-pynance
-scipy
+
+ telethon
+ beautifulsoup4
+ requests
+ pandas
+ sqlalchemy
+ fastapi
+ uvicorn
+ pydantic
+ dbt
+ torch
+ torchvision
+ tensorflow
+ numpy
+ matplotlib
+ seaborn
+ pillow
+ gunicorn
+ pytest
+ 
+ loguru
+ tqdm

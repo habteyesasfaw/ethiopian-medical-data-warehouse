@@ -7,15 +7,28 @@ __pycache__/
 venv/
 .env/
 *.env
+.env
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Data files
+Data files
 data/
 *.csv
 *.json
+*.docx
+*.txt
 *.xlsx
+data/photos/
+*.jpg
+#Model
+models/
+*.json
+*.safetensors
+*.model
+*.json
+
+
 
 # Output files and directories
 reports/
@@ -32,7 +45,6 @@ models/
 
 # PyCharm specific
 .idea/
-
 # macOS Finder
 .DS_Store
 
