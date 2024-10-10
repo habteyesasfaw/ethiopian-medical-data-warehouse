@@ -1,0 +1,369 @@
+[0m15:46:39.318897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BA2D9340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BCAD3D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BCB07E90>]}
+
+
+============================== 15:46:39.325892 | ffc9a755-5950-4a0c-8a40-62e70c14d3fd ==============================
+[0m15:46:39.325892 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:46:39.328631 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init ethiopian_medical_businesses', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:46:39.347942 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/habteyes.asfaw/.dbt')}
+[0m15:46:39.348946 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m15:46:39.350086 [error] [MainThread]: Encountered an error:
+'NoneType' object is not subscriptable
+[0m15:46:39.350086 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\init.py", line 320, in run
+    profile_name = self.get_profile_name_from_current_project()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\init.py", line 141, in get_profile_name_from_current_project
+    return dbt_project["profile"]
+           ~~~~~~~~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+[0m15:46:39.359206 [debug] [MainThread]: Command `dbt init` failed at 15:46:39.359206 after 0.28 seconds
+[0m15:46:39.359206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BD5261B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BE56F140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2BE4FFFE0>]}
+[0m15:46:39.360291 [debug] [MainThread]: Flushing usage events
+[0m15:50:39.360191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA205E7140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA1ECC7050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA1FA58E30>]}
+
+
+============================== 15:50:39.375949 | b9605839-cdee-4f75-b16c-a10ae863ca4d ==============================
+[0m15:50:39.375949 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:50:39.375949 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init ethiopian_medical_businesses', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m15:50:39.375949 [info ] [MainThread]: Setting up your profile.
+[0m15:50:39.391493 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m15:50:39.391493 [debug] [MainThread]: Command `dbt init` failed at 15:50:39.391493 after 0.26 seconds
+[0m15:50:39.391493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA20783F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA202A74A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EA20724080>]}
+[0m15:50:39.391493 [debug] [MainThread]: Flushing usage events
+[0m15:52:14.755932 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254A386BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254A2F91FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254A2F93D70>]}
+
+
+============================== 15:52:14.755932 | dbd5d239-464f-47a7-9708-7ad977bda405 ==============================
+[0m15:52:14.755932 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:52:14.755932 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init ethiopian_medical_businesses', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:52:14.776643 [info ] [MainThread]: Setting up your profile.
+[0m16:00:43.974712 [error] [MainThread]: Encountered an error:
+
+[0m16:00:43.989865 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\init.py", line 321, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m16:00:43.996908 [debug] [MainThread]: Command `dbt init` failed at 16:00:43.996908 after 509.42 seconds
+[0m16:00:43.997898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254A447C620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254A4703020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254A4701F40>]}
+[0m16:00:43.997898 [debug] [MainThread]: Flushing usage events
+[0m16:00:57.163203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2A529FB00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2A529F7A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2A529E6F0>]}
+
+
+============================== 16:00:57.163203 | eec79c1a-cca9-4362-ad9e-428d69e6ce53 ==============================
+[0m16:00:57.163203 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:00:57.163203 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt init ethiopian_medical_businesses', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:00:57.200633 [info ] [MainThread]: Setting up your profile.
+[0m16:08:59.758835 [info ] [MainThread]: Profile my_project_profile written to C:\Users\habteyes.asfaw\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:08:59.758835 [debug] [MainThread]: Command `dbt init` succeeded at 16:08:59.758835 after 482.81 seconds
+[0m16:08:59.758835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2A485EE40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2A5A27D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2A493A360>]}
+[0m16:08:59.758835 [debug] [MainThread]: Flushing usage events
+[0m16:16:07.369729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A324D52D80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A324D52CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A324D50AA0>]}
+
+
+============================== 16:16:07.379197 | 6133d43c-4688-406c-a005-412e06fa39bb ==============================
+[0m16:16:07.379197 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:16:07.383336 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:16:07.386858 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'default'
+[0m16:16:07.390211 [debug] [MainThread]: Command `dbt test` failed at 16:16:07.390211 after 0.26 seconds
+[0m16:16:07.391643 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A324D82DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A324C636E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A3235262D0>]}
+[0m16:16:07.392132 [debug] [MainThread]: Flushing usage events
+[0m16:23:04.535752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323E467560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323EFB9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323EFB9400>]}
+
+
+============================== 16:23:04.545287 | 802116eb-3bc3-4f2e-a741-8cd8a52753b5 ==============================
+[0m16:23:04.545287 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:23:04.545287 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:05.158479 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path []: Additional properties are not allowed ('target' was unexpected)
+
+Error encountered in C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\dbt_project.yml
+[0m16:23:05.158479 [debug] [MainThread]: Command `dbt test` failed at 16:23:05.158479 after 0.82 seconds
+[0m16:23:05.158479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323E4C10D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323EFF4E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002323F22C7D0>]}
+[0m16:23:05.158479 [debug] [MainThread]: Flushing usage events
+[0m16:28:25.001808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193B8A52DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193B7EFA6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193B88527E0>]}
+
+
+============================== 16:28:25.017446 | bdacce0b-ef69-44a8-81e5-d22afc2e99ad ==============================
+[0m16:28:25.017446 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:28:25.017446 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:25.097655 [error] [MainThread]: Encountered an error:
+Runtime Error
+  source-paths and model-paths cannot both be defined. The `source-paths` config has been deprecated in favor of `model-paths`. Please update your `dbt_project.yml` configuration to reflect this change.
+
+Error encountered in C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\dbt_project.yml
+[0m16:28:25.099903 [debug] [MainThread]: Command `dbt run` failed at 16:28:25.099903 after 0.28 seconds
+[0m16:28:25.099903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193B7EFA6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193B8C8DDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193B8CCECF0>]}
+[0m16:28:25.100882 [debug] [MainThread]: Flushing usage events
+[0m16:28:58.022294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A9F3FA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023AA317E180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023AA3771F70>]}
+
+
+============================== 16:28:58.022294 | 697022af-14c5-47aa-aacc-bfaebf325914 ==============================
+[0m16:28:58.022294 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:28:58.022294 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:58.118556 [info ] [MainThread]: dbt version: 1.8.7
+[0m16:28:58.119568 [info ] [MainThread]: python version: 3.12.7
+[0m16:28:58.119568 [info ] [MainThread]: python path: C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Scripts\python.exe
+[0m16:28:58.120567 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m16:28:58.203914 [info ] [MainThread]: Using profiles dir at C:\Users\habteyes.asfaw\.dbt
+[0m16:28:58.204913 [info ] [MainThread]: Using profiles.yml file at C:\Users\habteyes.asfaw\.dbt\profiles.yml
+[0m16:28:58.205715 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\dbt_project.yml
+[0m16:28:58.209482 [info ] [MainThread]: adapter type: postgres
+[0m16:28:58.210400 [info ] [MainThread]: adapter version: 1.8.2
+[0m16:28:58.213794 [info ] [MainThread]: Configuration:
+[0m16:28:58.214742 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:28:58.215796 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m16:28:58.216699 [info ] [MainThread]: Required dependencies:
+[0m16:28:58.217365 [debug] [MainThread]: Executing "git --help"
+[0m16:28:58.253474 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:28:58.253474 [debug] [MainThread]: STDERR: "b''"
+[0m16:28:58.253474 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:28:58.253474 [info ] [MainThread]: Connection:
+[0m16:28:58.253474 [info ] [MainThread]:   host: localhost
+[0m16:28:58.253474 [info ] [MainThread]:   port: 5432
+[0m16:28:58.253474 [info ] [MainThread]:   user: postgres
+[0m16:28:58.253474 [info ] [MainThread]:   database: EthMedHub
+[0m16:28:58.253474 [info ] [MainThread]:   schema: public
+[0m16:28:58.253474 [info ] [MainThread]:   connect_timeout: 10
+[0m16:28:58.262861 [info ] [MainThread]:   role: None
+[0m16:28:58.263223 [info ] [MainThread]:   search_path: None
+[0m16:28:58.263966 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:28:58.263966 [info ] [MainThread]:   sslmode: None
+[0m16:28:58.265166 [info ] [MainThread]:   sslcert: None
+[0m16:28:58.265166 [info ] [MainThread]:   sslkey: None
+[0m16:28:58.266172 [info ] [MainThread]:   sslrootcert: None
+[0m16:28:58.266172 [info ] [MainThread]:   application_name: dbt
+[0m16:28:58.267171 [info ] [MainThread]:   retries: 1
+[0m16:28:58.268176 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:28:58.269184 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:29:00.887358 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:29:00.887358 [debug] [MainThread]: On debug: select 1 as id
+[0m16:29:00.887358 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:29:00.927307 [debug] [MainThread]: SQL status: SELECT 1 in 0.037 seconds
+[0m16:29:00.927307 [debug] [MainThread]: On debug: Close
+[0m16:29:00.927307 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:29:00.927307 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:29:00.927307 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  source-paths and model-paths cannot both be defined. The `source-paths` config has been deprecated in favor of `model-paths`. Please update your `dbt_project.yml` configuration to reflect this change.
+
+Error encountered in C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\dbt_project.yml
+
+
+[0m16:29:00.927307 [debug] [MainThread]: Command `dbt debug` failed at 16:29:00.927307 after 3.05 seconds
+[0m16:29:00.927307 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:29:00.927307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A9F3FA210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A9EC1F470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023AA28CCE60>]}
+[0m16:29:00.927307 [debug] [MainThread]: Flushing usage events
+[0m16:31:24.266850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243E1FFA270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243E1503B00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243E15023C0>]}
+
+
+============================== 16:31:24.269877 | b348addf-de93-4726-9558-ed9317e0303c ==============================
+[0m16:31:24.269877 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:31:24.270850 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:31:24.385017 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'ethiopian-medical-data-warehouse' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\dbt_project.yml
+[0m16:31:24.385017 [debug] [MainThread]: Command `dbt run` failed at 16:31:24.385017 after 0.31 seconds
+[0m16:31:24.397101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DD40C7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243DCC95AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243E1BEAE10>]}
+[0m16:31:24.397628 [debug] [MainThread]: Flushing usage events
+[0m16:32:21.097252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE805A7020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE805A6BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE805A7AD0>]}
+
+
+============================== 16:32:21.097252 | 41390cb5-8bba-43c6-8bd3-bb0ae8b48557 ==============================
+[0m16:32:21.097252 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:32:21.097252 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:21.228527 [error] [MainThread]: Encountered an error:
+Runtime Error
+  at path ['name']: 'ethiopianmedicaldata-warehouse' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\dbt_project.yml
+[0m16:32:21.228527 [debug] [MainThread]: Command `dbt run` failed at 16:32:21.228527 after 0.27 seconds
+[0m16:32:21.228527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEFF4DBD40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE80BA38F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEFFE9D910>]}
+[0m16:32:21.228527 [debug] [MainThread]: Flushing usage events
+[0m16:32:36.442329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B246EE6D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2457B6CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B24689FFB0>]}
+
+
+============================== 16:32:36.442329 | 90a91ede-5d16-4084-8c28-89fb39e3d41f ==============================
+[0m16:32:36.442329 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:32:36.442329 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:36.645163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '90a91ede-5d16-4084-8c28-89fb39e3d41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B246E82840>]}
+[0m16:32:36.676424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '90a91ede-5d16-4084-8c28-89fb39e3d41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B246C59E20>]}
+[0m16:32:36.692051 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:32:36.717291 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:32:36.718287 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:32:36.719285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '90a91ede-5d16-4084-8c28-89fb39e3d41f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B245671850>]}
+[0m16:32:38.126421 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named 'raw_telegram_data' which was not found
+[0m16:32:38.126421 [debug] [MainThread]: Command `dbt run` failed at 16:32:38.126421 after 1.81 seconds
+[0m16:32:38.126421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B246C8E930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2470A4380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B24769F0E0>]}
+[0m16:32:38.126421 [debug] [MainThread]: Flushing usage events
+[0m16:33:35.522597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F4482600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F395A6C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F43230B0>]}
+
+
+============================== 16:33:35.538236 | f9518cf5-a411-4b14-92cc-1fb592e9aee5 ==============================
+[0m16:33:35.538236 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:33:35.538236 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:33:35.741568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f9518cf5-a411-4b14-92cc-1fb592e9aee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F29D22D0>]}
+[0m16:33:35.809746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f9518cf5-a411-4b14-92cc-1fb592e9aee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F46FFAA0>]}
+[0m16:33:35.809746 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:33:35.819771 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:33:35.819771 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:33:35.819771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f9518cf5-a411-4b14-92cc-1fb592e9aee5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F4A4AD50>]}
+[0m16:33:36.593694 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named '../data/telegram_data' which was not found
+[0m16:33:36.593694 [debug] [MainThread]: Command `dbt run` failed at 16:33:36.593694 after 1.21 seconds
+[0m16:33:36.593694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F3F71B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F2914200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000248F45F0140>]}
+[0m16:33:36.593694 [debug] [MainThread]: Flushing usage events
+[0m16:34:09.249799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133ABA6DD30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133ABA1BEC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133ABD52C60>]}
+
+
+============================== 16:34:09.249799 | edc10415-bb0a-4065-a835-2f095e1989c5 ==============================
+[0m16:34:09.249799 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:34:09.249799 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:34:09.423728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'edc10415-bb0a-4065-a835-2f095e1989c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133ABD2A840>]}
+[0m16:34:09.470761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'edc10415-bb0a-4065-a835-2f095e1989c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133AB7EADE0>]}
+[0m16:34:09.470761 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:34:09.470761 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:34:09.470761 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:34:09.470761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'edc10415-bb0a-4065-a835-2f095e1989c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133AC2C7B30>]}
+[0m16:34:10.278804 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named '../../data/telegram_data' which was not found
+[0m16:34:10.278804 [debug] [MainThread]: Command `dbt run` failed at 16:34:10.278804 after 1.16 seconds
+[0m16:34:10.278804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133AB293F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133AC3B3980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133AC60AD50>]}
+[0m16:34:10.278804 [debug] [MainThread]: Flushing usage events
+[0m16:38:33.929775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736F3C9CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736DA04380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736DA07080>]}
+
+
+============================== 16:38:33.929775 | d0ca3c18-9928-4e23-9451-d3842594e959 ==============================
+[0m16:38:33.929775 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:38:33.929775 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:38:34.125861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd0ca3c18-9928-4e23-9451-d3842594e959', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736F51C860>]}
+[0m16:38:34.190130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd0ca3c18-9928-4e23-9451-d3842594e959', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736E6C5EB0>]}
+[0m16:38:34.190130 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:38:34.194237 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:38:34.194237 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:38:34.194237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd0ca3c18-9928-4e23-9451-d3842594e959', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736F4CE390>]}
+[0m16:38:35.011639 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named 'telegram_data' in package or project 'public' which was not found
+[0m16:38:35.011639 [debug] [MainThread]: Command `dbt run` failed at 16:38:35.011639 after 1.27 seconds
+[0m16:38:35.011639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736F3C95E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736A0DA3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002736F51CB30>]}
+[0m16:38:35.011639 [debug] [MainThread]: Flushing usage events
+[0m16:45:07.377705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AEBCA900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AEBC89E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AEBCBDD0>]}
+
+
+============================== 16:45:07.377705 | b0f7c736-1c10-437a-8a5a-67800b7c5f32 ==============================
+[0m16:45:07.377705 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:45:07.377705 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:45:07.554607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b0f7c736-1c10-437a-8a5a-67800b7c5f32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AEA2A840>]}
+[0m16:45:07.587287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b0f7c736-1c10-437a-8a5a-67800b7c5f32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AE56FD70>]}
+[0m16:45:07.587287 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:45:07.602962 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:45:07.602962 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:45:07.602962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b0f7c736-1c10-437a-8a5a-67800b7c5f32', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AEBF0B60>]}
+[0m16:45:08.355316 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named 'medical_data' in package or project 'public' which was not found
+[0m16:45:08.370952 [debug] [MainThread]: Command `dbt run` failed at 16:45:08.370952 after 1.19 seconds
+[0m16:45:08.370952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AEA7A3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AF2AE600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6AF6DECC0>]}
+[0m16:45:08.370952 [debug] [MainThread]: Flushing usage events
+[0m16:52:37.818444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4F4252FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4EFE5F5C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4EFE5FC20>]}
+
+
+============================== 16:52:37.828474 | 5cfefe88-00fd-4ead-98ca-2e2923c430ca ==============================
+[0m16:52:37.828474 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:52:37.828474 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:52:38.013246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5cfefe88-00fd-4ead-98ca-2e2923c430ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4F44AA840>]}
+[0m16:52:38.060295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5cfefe88-00fd-4ead-98ca-2e2923c430ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4F3DEE480>]}
+[0m16:52:38.060295 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:52:38.075845 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:52:38.075845 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:52:38.075845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5cfefe88-00fd-4ead-98ca-2e2923c430ca', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4F481E810>]}
+[0m16:52:38.847611 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named 'telegram_data' which was not found
+[0m16:52:38.847611 [debug] [MainThread]: Command `dbt run` failed at 16:52:38.847611 after 1.22 seconds
+[0m16:52:38.847611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4F4121B20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4F48DB530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4F4DD8140>]}
+[0m16:52:38.847611 [debug] [MainThread]: Flushing usage events
+[0m16:56:45.303189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AF9A2A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AF9A38F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AF9A3830>]}
+
+
+============================== 16:56:45.318195 | d7226a81-dc56-4c7a-bb26-319796b1df2c ==============================
+[0m16:56:45.318195 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:56:45.318195 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:56:45.482890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7226a81-dc56-4c7a-bb26-319796b1df2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AC337530>]}
+[0m16:56:45.534807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd7226a81-dc56-4c7a-bb26-319796b1df2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AF2D2960>]}
+[0m16:56:45.534807 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:56:45.534807 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:56:45.534807 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:56:45.534807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd7226a81-dc56-4c7a-bb26-319796b1df2c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AF6F82F0>]}
+[0m16:56:46.318801 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.telegram_data' (models\telegram_data.sql) depends on a node named 'raw_telegram_data' which was not found
+[0m16:56:46.318801 [debug] [MainThread]: Command `dbt run` failed at 16:56:46.318801 after 1.20 seconds
+[0m16:56:46.318801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AF9A3620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149AF852E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000149B00F2750>]}
+[0m16:56:46.318801 [debug] [MainThread]: Flushing usage events
+[0m16:57:11.282286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C1E324DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C204A23C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C2179EF00>]}
+
+
+============================== 16:57:11.288320 | 1520177c-a491-44ca-afa6-7386de245db0 ==============================
+[0m16:57:11.288320 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:57:11.288320 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:57:11.460710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1520177c-a491-44ca-afa6-7386de245db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C21DE76B0>]}
+[0m16:57:11.508175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1520177c-a491-44ca-afa6-7386de245db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C21BFA720>]}
+[0m16:57:11.508175 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:57:11.508175 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:57:11.508175 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:57:11.508175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1520177c-a491-44ca-afa6-7386de245db0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C21EA30E0>]}
+[0m16:57:12.275251 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named 'raw_telegram_data' which was not found
+[0m16:57:12.275251 [debug] [MainThread]: Command `dbt run` failed at 16:57:12.275251 after 1.12 seconds
+[0m16:57:12.275251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C205DBFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C227B21B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C1EA92CC0>]}
+[0m16:57:12.275251 [debug] [MainThread]: Flushing usage events

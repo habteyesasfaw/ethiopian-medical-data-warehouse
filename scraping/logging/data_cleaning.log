@@ -1,0 +1,7 @@
+2024-10-10 15:37:12,359 - INFO - Loading raw data from ../datatelegram_data.csv
+2024-10-10 15:37:12,359 - ERROR - Error during data cleaning: [Errno 2] No such file or directory: '../datatelegram_data.csv'
+2024-10-10 15:37:35,848 - INFO - Loading raw data from ../data/telegram_data.csv
+2024-10-10 15:37:35,914 - INFO - Removing duplicates
+2024-10-10 15:37:35,929 - INFO - Handling missing values
+2024-10-10 15:37:35,929 - INFO - Storing cleaned data to ../data/cleaned_telegram_data.csv
+2024-10-10 15:37:35,983 - INFO - Data cleaning completed successfully
