@@ -1,24 +1,12 @@
-name: 'ethiopian_medical_businesses'
+name: 'ethiopianmedicaldatawarehouse'
 version: '1.0'
+profile: my_project_profile  # Ensure this matches your profile name
 
-profile: 'default'
+# Use 'model-paths' instead of 'source-paths'
+model-paths: ["models"]  # Specify the directory for your models
+target-path: "target"     # Where compiled SQL files will be stored
+clean-targets:
+  - "target"
+  - "dbt_packages"
 
-# Define model locations
-model-paths: ["models"]
-
-# Snapshot location
-snapshot-paths: ["snapshots"]
-
-# Test location
-test-paths: ["tests"]
-
-# Database configurations (Assuming you're using PostgreSQL)
-target:
-  name: 'prod'
-  type: 'postgres'
-  host: 'localhost'
-  user: 'postgres'
-  password: 'root'
-  port: 5432
-  dbname: 'EthMedHub'
-  schema: 'public'
+# You can include other configurations as needed
