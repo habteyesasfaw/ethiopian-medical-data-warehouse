@@ -16,7 +16,7 @@ def clean_data(input_file, output_file):
         logging.info(f"Loading raw data from {input_file}")
         data = pd.read_csv(input_file)
         
-        # Remove duplicates
+        # Remove duplicate
         logging.info("Removing duplicates")
         data.drop_duplicates(inplace=True)
         
