@@ -45,7 +45,6 @@ models/
 
 # PyCharm specific
 .idea/
-
 # macOS Finder
 .DS_Store
 
