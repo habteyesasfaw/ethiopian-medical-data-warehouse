@@ -88,7 +88,6 @@ async def main():
             'yetenaweg',
             'EAHCI'
         ]
-
         # Iterate over channels and scrape data into the single CSV file
         for channel in channels:
             logger.info(f"Starting scrape for channel {channel}")
