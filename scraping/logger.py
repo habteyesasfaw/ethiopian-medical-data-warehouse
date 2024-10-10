@@ -10,7 +10,7 @@ def get_logger(name):
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    # Get the logger instance
+    ## Get the logger instance
     logger = logging.getLogger(name)
     logger.setLevel(logging.INFO)
 
