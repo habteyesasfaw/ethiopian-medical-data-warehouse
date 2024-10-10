@@ -1,0 +1,57 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files
+data/
+*.csv
+*.json
+*.xlsx
+
+# Output files and directories
+reports/
+*.pdf
+*.html
+*.png
+
+models/
+*.pkl
+
+# IDE and editor configurations
+.vscode/
+.idea/
+
+# PyCharm specific
+.idea/
+
+# macOS Finder
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Test output
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Build directories
+build/
+dist/
+*.egg-info
+
+# Environment files
+*.env
+.env/
+#folder/*

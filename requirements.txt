@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+TextBlob
+scikit-learn
+nltk
+spacy
+swifter
+pandas_ta
+pynance
+scipy
