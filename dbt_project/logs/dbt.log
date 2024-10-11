@@ -2239,3 +2239,272 @@ drop table if exists "EthMedHub"."public"."medical_data__dbt_backup" cascade
 [0m11:48:31.976759 [debug] [MainThread]: Command `dbt run` succeeded at 11:48:31.976759 after 3.09 seconds
 [0m11:48:31.979919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC0CA7FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC179C740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC00D25D0>]}
 [0m11:48:31.979919 [debug] [MainThread]: Flushing usage events
+[0m15:21:28.360432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223A5F7140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223A6BB920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223A7A7FB0>]}
+
+
+============================== 15:21:28.371812 | 05cd7b61-244e-4e3e-808c-3575ca111d75 ==============================
+[0m15:21:28.371812 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:21:28.371812 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:21:28.742164 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '05cd7b61-244e-4e3e-808c-3575ca111d75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022238E1E870>]}
+[0m15:21:28.811151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '05cd7b61-244e-4e3e-808c-3575ca111d75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223A11A960>]}
+[0m15:21:28.814240 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m15:21:28.837183 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m15:21:29.334416 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:21:29.334416 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:21:29.365681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '05cd7b61-244e-4e3e-808c-3575ca111d75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223A9D3A70>]}
+[0m15:21:29.499780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05cd7b61-244e-4e3e-808c-3575ca111d75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223AFFF860>]}
+[0m15:21:29.499780 [info ] [MainThread]: Found 2 models, 10 data tests, 423 macros
+[0m15:21:29.499780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05cd7b61-244e-4e3e-808c-3575ca111d75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223A1B3050>]}
+[0m15:21:29.499780 [info ] [MainThread]: 
+[0m15:21:29.499780 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:21:29.499780 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub_public'
+[0m15:21:32.539022 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m15:21:32.539022 [debug] [ThreadPool]: On list_EthMedHub_public: BEGIN
+[0m15:21:32.539022 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:21:32.584771 [debug] [ThreadPool]: SQL status: BEGIN in 0.052 seconds
+[0m15:21:32.584771 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m15:21:32.584771 [debug] [ThreadPool]: On list_EthMedHub_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub_public"} */
+select
+      'EthMedHub' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m15:21:32.653030 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.058 seconds
+[0m15:21:32.655511 [debug] [ThreadPool]: On list_EthMedHub_public: ROLLBACK
+[0m15:21:32.655511 [debug] [ThreadPool]: On list_EthMedHub_public: Close
+[0m15:21:32.662505 [debug] [MainThread]: Using postgres connection "master"
+[0m15:21:32.662505 [debug] [MainThread]: On master: BEGIN
+[0m15:21:32.663505 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:21:32.728432 [debug] [MainThread]: SQL status: BEGIN in 0.074 seconds
+[0m15:21:32.728432 [debug] [MainThread]: Using postgres connection "master"
+[0m15:21:32.728432 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:21:32.774857 [debug] [MainThread]: SQL status: SELECT 0 in 0.048 seconds
+[0m15:21:32.774857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '05cd7b61-244e-4e3e-808c-3575ca111d75', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223AF81790>]}
+[0m15:21:32.774857 [debug] [MainThread]: On master: ROLLBACK
+[0m15:21:32.774857 [debug] [MainThread]: On master: Close
+[0m15:21:32.790458 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:21:32.790458 [info ] [MainThread]: 
+[0m15:21:32.790458 [debug] [Thread-1 (]: Began running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m15:21:32.806106 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.raw_data'
+[0m15:21:32.807301 [debug] [Thread-1 (]: Began compiling node model.ethiopianmedicaldatawarehouse.raw_data
+[0m15:21:32.817062 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m15:21:32.817062 [debug] [Thread-1 (]: Began executing node model.ethiopianmedicaldatawarehouse.raw_data
+[0m15:21:32.817062 [debug] [Thread-1 (]: Finished running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m15:21:32.817062 [debug] [Thread-3 (]: Began running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m15:21:32.817062 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.medical_data'
+[0m15:21:32.817062 [debug] [Thread-3 (]: Began compiling node model.ethiopianmedicaldatawarehouse.medical_data
+[0m15:21:32.833129 [debug] [Thread-3 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m15:21:32.833129 [debug] [Thread-3 (]: Began executing node model.ethiopianmedicaldatawarehouse.medical_data
+[0m15:21:32.839684 [debug] [Thread-3 (]: Finished running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m15:21:32.839684 [debug] [Thread-2 (]: Began running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_title.b4405a2c3d
+[0m15:21:32.839684 [debug] [Thread-1 (]: Began running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_username.a866788473
+[0m15:21:32.839684 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_title.b4405a2c3d'
+[0m15:21:32.839684 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ethiopianmedicaldatawarehouse.raw_data, now test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_username.a866788473)
+[0m15:21:32.839684 [debug] [Thread-4 (]: Began running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_date.42ec44dc0a
+[0m15:21:32.839684 [debug] [Thread-3 (]: Began running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_id.8cd9ba681e
+[0m15:21:32.839684 [debug] [Thread-2 (]: Began compiling node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_title.b4405a2c3d
+[0m15:21:32.839684 [debug] [Thread-1 (]: Began compiling node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_username.a866788473
+[0m15:21:32.839684 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.ethiopianmedicaldatawarehouse.not_null_medical_data_date.42ec44dc0a'
+[0m15:21:32.839684 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.ethiopianmedicaldatawarehouse.medical_data, now test.ethiopianmedicaldatawarehouse.not_null_medical_data_id.8cd9ba681e)
+[0m15:21:32.851459 [debug] [Thread-2 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_title.b4405a2c3d"
+[0m15:21:32.866363 [debug] [Thread-1 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_username.a866788473"
+[0m15:21:32.866363 [debug] [Thread-4 (]: Began compiling node test.ethiopianmedicaldatawarehouse.not_null_medical_data_date.42ec44dc0a
+[0m15:21:32.866363 [debug] [Thread-3 (]: Began compiling node test.ethiopianmedicaldatawarehouse.not_null_medical_data_id.8cd9ba681e
+[0m15:21:32.866363 [debug] [Thread-4 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.not_null_medical_data_date.42ec44dc0a"
+[0m15:21:32.884168 [debug] [Thread-3 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.not_null_medical_data_id.8cd9ba681e"
+[0m15:21:32.884168 [debug] [Thread-2 (]: Began executing node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_title.b4405a2c3d
+[0m15:21:32.884168 [debug] [Thread-2 (]: Finished running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_title.b4405a2c3d
+[0m15:21:32.884168 [debug] [Thread-2 (]: Began running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_media_path.553105d615
+[0m15:21:32.884168 [debug] [Thread-1 (]: Began executing node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_username.a866788473
+[0m15:21:32.884168 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_title.b4405a2c3d, now test.ethiopianmedicaldatawarehouse.not_null_medical_data_media_path.553105d615)
+[0m15:21:32.884168 [debug] [Thread-1 (]: Finished running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_username.a866788473
+[0m15:21:32.884168 [debug] [Thread-4 (]: Began executing node test.ethiopianmedicaldatawarehouse.not_null_medical_data_date.42ec44dc0a
+[0m15:21:32.884168 [debug] [Thread-2 (]: Began compiling node test.ethiopianmedicaldatawarehouse.not_null_medical_data_media_path.553105d615
+[0m15:21:32.884168 [debug] [Thread-1 (]: Began running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_message.1715eb90fd
+[0m15:21:32.884168 [debug] [Thread-3 (]: Began executing node test.ethiopianmedicaldatawarehouse.not_null_medical_data_id.8cd9ba681e
+[0m15:21:32.884168 [debug] [Thread-4 (]: Finished running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_date.42ec44dc0a
+[0m15:21:32.900294 [debug] [Thread-2 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.not_null_medical_data_media_path.553105d615"
+[0m15:21:32.900294 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ethiopianmedicaldatawarehouse.not_null_medical_data_channel_username.a866788473, now test.ethiopianmedicaldatawarehouse.not_null_medical_data_message.1715eb90fd)
+[0m15:21:32.900294 [debug] [Thread-3 (]: Finished running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_id.8cd9ba681e
+[0m15:21:32.900294 [debug] [Thread-4 (]: Began running node test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data
+[0m15:21:32.900294 [debug] [Thread-1 (]: Began compiling node test.ethiopianmedicaldatawarehouse.not_null_medical_data_message.1715eb90fd
+[0m15:21:32.900294 [debug] [Thread-3 (]: Began running node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_title.59fe3333ec
+[0m15:21:32.900294 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.ethiopianmedicaldatawarehouse.not_null_medical_data_date.42ec44dc0a, now test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data)
+[0m15:21:32.900294 [debug] [Thread-1 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.not_null_medical_data_message.1715eb90fd"
+[0m15:21:32.900294 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.ethiopianmedicaldatawarehouse.not_null_medical_data_id.8cd9ba681e, now test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_title.59fe3333ec)
+[0m15:21:32.900294 [debug] [Thread-2 (]: Began executing node test.ethiopianmedicaldatawarehouse.not_null_medical_data_media_path.553105d615
+[0m15:21:32.900294 [debug] [Thread-4 (]: Began compiling node test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data
+[0m15:21:32.900294 [debug] [Thread-3 (]: Began compiling node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_title.59fe3333ec
+[0m15:21:32.900294 [debug] [Thread-2 (]: Finished running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_media_path.553105d615
+[0m15:21:32.918953 [debug] [Thread-4 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data"
+[0m15:21:32.918953 [debug] [Thread-3 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_title.59fe3333ec"
+[0m15:21:32.918953 [debug] [Thread-1 (]: Began executing node test.ethiopianmedicaldatawarehouse.not_null_medical_data_message.1715eb90fd
+[0m15:21:32.918953 [debug] [Thread-2 (]: Began running node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_username.c913eaaa30
+[0m15:21:32.918953 [debug] [Thread-1 (]: Finished running node test.ethiopianmedicaldatawarehouse.not_null_medical_data_message.1715eb90fd
+[0m15:21:32.931916 [debug] [Thread-1 (]: Began running node test.ethiopianmedicaldatawarehouse.unique_medical_data_id.ed13df1812
+[0m15:21:32.918953 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.ethiopianmedicaldatawarehouse.not_null_medical_data_media_path.553105d615, now test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_username.c913eaaa30)
+[0m15:21:32.932925 [debug] [Thread-3 (]: Began executing node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_title.59fe3333ec
+[0m15:21:32.933928 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.ethiopianmedicaldatawarehouse.not_null_medical_data_message.1715eb90fd, now test.ethiopianmedicaldatawarehouse.unique_medical_data_id.ed13df1812)
+[0m15:21:32.934928 [debug] [Thread-2 (]: Began compiling node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_username.c913eaaa30
+[0m15:21:32.935925 [debug] [Thread-3 (]: Finished running node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_title.59fe3333ec
+[0m15:21:32.936992 [debug] [Thread-4 (]: Began executing node test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data
+[0m15:21:32.937941 [debug] [Thread-1 (]: Began compiling node test.ethiopianmedicaldatawarehouse.unique_medical_data_id.ed13df1812
+[0m15:21:32.939944 [debug] [Thread-2 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_username.c913eaaa30"
+[0m15:21:32.939944 [debug] [Thread-4 (]: Finished running node test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data
+[0m15:21:32.948584 [debug] [Thread-1 (]: Writing injected SQL for node "test.ethiopianmedicaldatawarehouse.unique_medical_data_id.ed13df1812"
+[0m15:21:32.950963 [debug] [Thread-1 (]: Began executing node test.ethiopianmedicaldatawarehouse.unique_medical_data_id.ed13df1812
+[0m15:21:32.951962 [debug] [Thread-2 (]: Began executing node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_username.c913eaaa30
+[0m15:21:32.952965 [debug] [Thread-1 (]: Finished running node test.ethiopianmedicaldatawarehouse.unique_medical_data_id.ed13df1812
+[0m15:21:32.955058 [debug] [Thread-2 (]: Finished running node test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_username.c913eaaa30
+[0m15:21:32.956966 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:21:32.956966 [debug] [MainThread]: Connection 'list_EthMedHub_public' was properly closed.
+[0m15:21:32.958041 [debug] [MainThread]: Connection 'test.ethiopianmedicaldatawarehouse.unique_medical_data_id.ed13df1812' was properly closed.
+[0m15:21:32.958041 [debug] [MainThread]: Connection 'test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_title.59fe3333ec' was properly closed.
+[0m15:21:32.958041 [debug] [MainThread]: Connection 'test.ethiopianmedicaldatawarehouse.unique_medical_data_channel_username.c913eaaa30' was properly closed.
+[0m15:21:32.959055 [debug] [MainThread]: Connection 'test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data' was properly closed.
+[0m15:21:32.961046 [debug] [MainThread]: Command end result
+[0m15:21:33.307449 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m15:21:33.307449 [info ] [MainThread]: Building catalog
+[0m15:21:33.307449 [debug] [ThreadPool]: Acquiring new postgres connection 'EthMedHub.information_schema'
+[0m15:21:33.324602 [debug] [ThreadPool]: Using postgres connection "EthMedHub.information_schema"
+[0m15:21:33.324602 [debug] [ThreadPool]: On EthMedHub.information_schema: BEGIN
+[0m15:21:33.325618 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:21:33.355990 [debug] [ThreadPool]: SQL status: BEGIN in 0.035 seconds
+[0m15:21:33.355990 [debug] [ThreadPool]: Using postgres connection "EthMedHub.information_schema"
+[0m15:21:33.355990 [debug] [ThreadPool]: On EthMedHub.information_schema: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "EthMedHub.information_schema"} */
+
+    
+    
+
+    select
+        'EthMedHub' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('raw_data')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('medical_data')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m15:21:33.424598 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.062 seconds
+[0m15:21:33.427610 [debug] [ThreadPool]: On EthMedHub.information_schema: ROLLBACK
+[0m15:21:33.428611 [debug] [ThreadPool]: On EthMedHub.information_schema: Close
+[0m15:21:33.458176 [info ] [MainThread]: Catalog written to C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\target\catalog.json
+[0m15:21:33.462270 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:21:33.462270 after 5.37 seconds
+[0m15:21:33.462270 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:21:33.462270 [debug] [MainThread]: Connection 'EthMedHub.information_schema' was properly closed.
+[0m15:21:33.462270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223A419B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002223AEC4EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022239683230>]}
+[0m15:21:33.462270 [debug] [MainThread]: Flushing usage events
+[0m15:21:59.440660 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBD77EB230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBD6231A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBDAFFCB30>]}
+
+
+============================== 15:21:59.440660 | 5018f9c2-1227-48a0-8cd5-713a8ea71ba4 ==============================
+[0m15:21:59.440660 [info ] [MainThread]: Running with dbt=1.8.7
+[0m15:21:59.440660 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt docs serve', 'send_anonymous_usage_stats': 'True'}
+[0m15:21:59.621654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5018f9c2-1227-48a0-8cd5-713a8ea71ba4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBD991FB00>]}
+[0m15:21:59.685839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5018f9c2-1227-48a0-8cd5-713a8ea71ba4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBD9EE18E0>]}
