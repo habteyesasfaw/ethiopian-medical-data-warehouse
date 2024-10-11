@@ -1,12 +1,11 @@
 name: 'ethiopianmedicaldatawarehouse'
 version: '1.0'
-profile: my_project_profile  # Ensure this matches your profile name
+config-version: 2
+profile: 'default'
 
-# Use 'model-paths' instead of 'source-paths'
-model-paths: ["models"]  # Specify the directory for your models
-target-path: "target"     # Where compiled SQL files will be stored
-clean-targets:
-  - "target"
-  - "dbt_packages"
-
-# You can include other configurations as needed
+models:
+  ethiopianmedicaldatawarehouse:
+    raw_data:
+      materialized: view
+    medical_data:
+      materialized: table

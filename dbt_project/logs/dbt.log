@@ -367,3 +367,1875 @@ Compilation Error
 [0m16:57:12.275251 [debug] [MainThread]: Command `dbt run` failed at 16:57:12.275251 after 1.12 seconds
 [0m16:57:12.275251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C205DBFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C227B21B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020C1EA92CC0>]}
 [0m16:57:12.275251 [debug] [MainThread]: Flushing usage events
+[0m10:39:19.201615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F0BFF230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F4EB3FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F4EB22D0>]}
+
+
+============================== 10:39:19.226089 | b91c1302-e0ae-4073-abb3-74123c205ac1 ==============================
+[0m10:39:19.226089 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:39:19.226452 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m10:39:19.926624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b91c1302-e0ae-4073-abb3-74123c205ac1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F5601580>]}
+[0m10:39:20.006230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b91c1302-e0ae-4073-abb3-74123c205ac1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F515FFE0>]}
+[0m10:39:20.006230 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m10:39:20.022065 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m10:39:20.022065 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:39:20.022065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b91c1302-e0ae-4073-abb3-74123c205ac1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F5185A60>]}
+[0m10:39:21.588612 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named 'raw_telegram_data' which was not found
+[0m10:39:21.604229 [debug] [MainThread]: Command `dbt run` failed at 10:39:21.604229 after 2.90 seconds
+[0m10:39:21.604229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F5187EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F57518B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202F5E01460>]}
+[0m10:39:21.604229 [debug] [MainThread]: Flushing usage events
+[0m10:40:23.939697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AF52F140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AF426B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AF427D70>]}
+
+
+============================== 10:40:23.945108 | e26881c5-6c0a-4127-9f79-19b4a62bf980 ==============================
+[0m10:40:23.945108 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:40:23.945108 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:40:24.286022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e26881c5-6c0a-4127-9f79-19b4a62bf980', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AFA44B00>]}
+[0m10:40:24.425304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e26881c5-6c0a-4127-9f79-19b4a62bf980', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AE79EC30>]}
+[0m10:40:24.425304 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m10:40:24.444647 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m10:40:24.444647 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:40:24.444647 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e26881c5-6c0a-4127-9f79-19b4a62bf980', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AFA45EB0>]}
+[0m10:40:26.098292 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.cleaned_telegram_data' (models\cleaned_telegram_data.sql) depends on a node named 'public.medical_data' which was not found
+[0m10:40:26.098292 [debug] [MainThread]: Command `dbt run` failed at 10:40:26.098292 after 2.50 seconds
+[0m10:40:26.098292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AEA08B30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AFE46660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000122AFEA0320>]}
+[0m10:40:26.098292 [debug] [MainThread]: Flushing usage events
+[0m10:54:43.378210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFDDE1E240>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFDCD217C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFDFB832F0>]}
+
+
+============================== 10:54:43.393851 | 69166280-0667-456d-88cf-b2ff586bc193 ==============================
+[0m10:54:43.393851 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:54:43.393851 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:54:43.768241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '69166280-0667-456d-88cf-b2ff586bc193', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFDDE1E1B0>]}
+[0m10:54:43.845998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '69166280-0667-456d-88cf-b2ff586bc193', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFE08A5FA0>]}
+[0m10:54:43.845998 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m10:54:43.863964 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m10:54:43.865249 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:54:43.865249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '69166280-0667-456d-88cf-b2ff586bc193', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFE0C97B90>]}
+[0m10:54:45.413883 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.medical_data' (models\medical_data.sql) depends on a node named 'raw_data' which was not found
+[0m10:54:45.429522 [debug] [MainThread]: Command `dbt run` failed at 10:54:45.429522 after 2.47 seconds
+[0m10:54:45.429522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFE055A4E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFE1400530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FFE1400500>]}
+[0m10:54:45.429522 [debug] [MainThread]: Flushing usage events
+[0m10:58:00.274327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CA231850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CD15AC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177C9833EF0>]}
+
+
+============================== 10:58:00.279575 | e85b0eb6-dc7c-4385-8212-092aee08349e ==============================
+[0m10:58:00.279575 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:58:00.287375 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:58:00.883472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e85b0eb6-dc7c-4385-8212-092aee08349e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CC41E840>]}
+[0m10:58:01.016871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e85b0eb6-dc7c-4385-8212-092aee08349e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CC1D7860>]}
+[0m10:58:01.016871 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m10:58:01.055018 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m10:58:01.055018 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:58:01.061031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e85b0eb6-dc7c-4385-8212-092aee08349e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CDF71D60>]}
+[0m10:58:02.962551 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m10:58:02.980974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'e85b0eb6-dc7c-4385-8212-092aee08349e', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CDF45FA0>]}
+[0m10:58:03.260990 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.medical_data' (models\medical_data.sql) depends on a node named 'raw_data' which was not found
+[0m10:58:03.276633 [debug] [MainThread]: Command `dbt run` failed at 10:58:03.276633 after 3.54 seconds
+[0m10:58:03.276633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CC893230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CABB4E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177CE485DF0>]}
+[0m10:58:03.276633 [debug] [MainThread]: Flushing usage events
+[0m10:58:56.121339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FBD21760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FEA24170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FF55A330>]}
+
+
+============================== 10:58:56.121339 | 2f2a4ad7-0788-4807-b64c-4005c9f89e66 ==============================
+[0m10:58:56.121339 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:58:56.121339 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:58:56.514099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2f2a4ad7-0788-4807-b64c-4005c9f89e66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FF834D10>]}
+[0m10:58:56.658810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2f2a4ad7-0788-4807-b64c-4005c9f89e66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FF8A5DF0>]}
+[0m10:58:56.658810 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m10:58:56.682452 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m10:58:56.682452 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:58:56.693523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2f2a4ad7-0788-4807-b64c-4005c9f89e66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FFC721E0>]}
+[0m10:58:58.820383 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m10:58:58.833355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '2f2a4ad7-0788-4807-b64c-4005c9f89e66', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A780428E90>]}
+[0m10:58:59.030178 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data' (tests\test_cleaned_telegram_data.sql) depends on a node named '../../data/cleaned_telegram_data' in package '' which was not found
+[0m10:58:59.228558 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2f2a4ad7-0788-4807-b64c-4005c9f89e66', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A780482E10>]}
+[0m10:58:59.518599 [error] [MainThread]: Encountered an error:
+Found a cycle: model.ethiopianmedicaldatawarehouse.medical_data
+[0m10:58:59.578829 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\main.py", line 569, in run
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\runnable.py", line 506, in run
+    self._runtime_initialize()
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\compile.py", line 125, in _runtime_initialize
+    super()._runtime_initialize()
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\runnable.py", line 147, in _runtime_initialize
+    self.compile_manifest()
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\base.py", line 145, in compile_manifest
+    self.graph = self.compiler.compile(self.manifest)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\compilation.py", line 449, in compile
+    linker.link_graph(manifest)
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\compilation.py", line 192, in link_graph
+    raise RuntimeError("Found a cycle: {}".format(cycle))
+RuntimeError: Found a cycle: model.ethiopianmedicaldatawarehouse.medical_data
+
+[0m10:58:59.599134 [debug] [MainThread]: Command `dbt run` failed at 10:58:59.599134 after 3.67 seconds
+[0m10:58:59.599134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FBD21760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7801A0740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A7FF7CE2A0>]}
+[0m10:58:59.599134 [debug] [MainThread]: Flushing usage events
+[0m11:00:56.276070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9552217F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E958A5B320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E95731CE00>]}
+
+
+============================== 11:00:56.291716 | a10af199-7ae3-4c7a-ac74-9d990982a54c ==============================
+[0m11:00:56.291716 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:00:56.291716 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt clean', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:00:56.676001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a10af199-7ae3-4c7a-ac74-9d990982a54c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E954B405F0>]}
+[0m11:00:56.759615 [debug] [MainThread]: Command `dbt clean` succeeded at 11:00:56.759615 after 0.91 seconds
+[0m11:00:56.759615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E9580014C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E958BB2DB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E954B405F0>]}
+[0m11:00:56.762313 [debug] [MainThread]: Flushing usage events
+[0m11:01:19.891774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001694870ADB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016947032A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016948783170>]}
+
+
+============================== 11:01:19.891774 | c901c7d6-5ca8-43db-88a1-ea0d418a920d ==============================
+[0m11:01:19.891774 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:01:19.891774 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:01:20.227097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c901c7d6-5ca8-43db-88a1-ea0d418a920d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016949801580>]}
+[0m11:01:20.321918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c901c7d6-5ca8-43db-88a1-ea0d418a920d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001694905BFB0>]}
+[0m11:01:20.321918 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:01:20.330007 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:01:20.339650 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:01:20.340403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c901c7d6-5ca8-43db-88a1-ea0d418a920d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169494C99A0>]}
+[0m11:01:21.832420 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m11:01:21.845237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c901c7d6-5ca8-43db-88a1-ea0d418a920d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001694A0491C0>]}
+[0m11:01:22.015803 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data' (tests\test_cleaned_telegram_data.sql) depends on a node named '../../data/cleaned_telegram_data' in package '' which was not found
+[0m11:01:22.158356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c901c7d6-5ca8-43db-88a1-ea0d418a920d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016949857E60>]}
+[0m11:01:22.349277 [error] [MainThread]: Encountered an error:
+Found a cycle: model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:01:22.349277 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\main.py", line 569, in run
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\runnable.py", line 506, in run
+    self._runtime_initialize()
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\compile.py", line 125, in _runtime_initialize
+    super()._runtime_initialize()
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\runnable.py", line 147, in _runtime_initialize
+    self.compile_manifest()
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\base.py", line 145, in compile_manifest
+    self.graph = self.compiler.compile(self.manifest)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\compilation.py", line 449, in compile
+    linker.link_graph(manifest)
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\compilation.py", line 192, in link_graph
+    raise RuntimeError("Found a cycle: {}".format(cycle))
+RuntimeError: Found a cycle: model.ethiopianmedicaldatawarehouse.medical_data
+
+[0m11:01:22.364929 [debug] [MainThread]: Command `dbt run` failed at 11:01:22.364929 after 2.69 seconds
+[0m11:01:22.364929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000169493A7EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001694922ECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001694A12B950>]}
+[0m11:01:22.364929 [debug] [MainThread]: Flushing usage events
+[0m11:01:28.532751 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m11:02:30.833759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E274515E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E24FB6030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E28B5A000>]}
+
+
+============================== 11:02:30.840774 | f8d86c6d-aa5d-472b-bd8f-3d7506fa04a1 ==============================
+[0m11:02:30.840774 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:02:30.840774 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt ls', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:02:31.140158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f8d86c6d-aa5d-472b-bd8f-3d7506fa04a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E2741CEC0>]}
+[0m11:02:31.212204 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f8d86c6d-aa5d-472b-bd8f-3d7506fa04a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E27063EF0>]}
+[0m11:02:31.229152 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:02:31.238889 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:02:31.463210 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:02:31.463210 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:02:31.526888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f8d86c6d-aa5d-472b-bd8f-3d7506fa04a1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E292D0710>]}
+[0m11:02:31.760817 [error] [MainThread]: Encountered an error:
+Found a cycle: model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:02:31.776554 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\main.py", line 507, in list
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\list.py", line 159, in run
+    self.compile_manifest()
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\base.py", line 145, in compile_manifest
+    self.graph = self.compiler.compile(self.manifest)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\compilation.py", line 449, in compile
+    linker.link_graph(manifest)
+  File "C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\compilation.py", line 192, in link_graph
+    raise RuntimeError("Found a cycle: {}".format(cycle))
+RuntimeError: Found a cycle: model.ethiopianmedicaldatawarehouse.medical_data
+
+[0m11:02:31.799008 [debug] [MainThread]: Command `dbt ls` failed at 11:02:31.799008 after 1.29 seconds
+[0m11:02:31.800326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E28183590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E2924FD40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011E298D60F0>]}
+[0m11:02:31.800326 [debug] [MainThread]: Flushing usage events
+[0m11:04:45.855222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024410621550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024412B93230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244140CC710>]}
+
+
+============================== 11:04:45.864257 | f44725dc-6809-4431-8a06-2399cf5caa4e ==============================
+[0m11:04:45.864257 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:04:45.870691 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:04:46.281041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f44725dc-6809-4431-8a06-2399cf5caa4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002441271E660>]}
+[0m11:04:46.359277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f44725dc-6809-4431-8a06-2399cf5caa4e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024410B3BB30>]}
+[0m11:04:46.359277 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:04:46.365796 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:04:46.598838 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m11:04:46.614588 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://models\schema.yaml
+[0m11:04:46.614588 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://models\medical_data.sql
+[0m11:04:47.111150 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.ethiopianmedicaldatawarehouse.medical_data' (models\medical_data.sql) depends on a node named 'raw_data' which was not found
+[0m11:04:47.111150 [debug] [MainThread]: Command `dbt run` failed at 11:04:47.111150 after 1.78 seconds
+[0m11:04:47.111150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024413CD9E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244144011C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244140FA240>]}
+[0m11:04:47.111150 [debug] [MainThread]: Flushing usage events
+[0m11:06:42.470707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921B7A0620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921B7A2C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921B7A0140>]}
+
+
+============================== 11:06:42.478727 | 5ab77cc7-2ec8-45eb-9dac-4b25051c2cb5 ==============================
+[0m11:06:42.478727 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:06:42.485960 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:06:42.487033 [error] [MainThread]: Encountered an error:
+Runtime Error
+  dbt cannot run because no profile was specified for this dbt project.
+  To specify a profile for this project, add a line like the this to
+  your dbt_project.yml file:
+  
+  profile: [profile name]
+  
+  Here, [profile name] should be replaced with a profile name
+  defined in your profiles.yml file. You can find profiles.yml here:
+  
+  C:\Users\habteyes.asfaw\.dbt/profiles.yml
+  
+[0m11:06:42.487033 [debug] [MainThread]: Command `dbt run` failed at 11:06:42.487033 after 0.46 seconds
+[0m11:06:42.487033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C235EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921B7A0620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C6CC3B0>]}
+[0m11:06:42.487033 [debug] [MainThread]: Flushing usage events
+[0m11:08:00.423657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A8D121580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A9081A120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A9081A6C0>]}
+
+
+============================== 11:08:00.431200 | 0e91f721-fb06-4aa0-af83-c9a896b418b2 ==============================
+[0m11:08:00.431200 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:08:00.439165 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:08:00.447209 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'default'
+[0m11:08:00.449864 [debug] [MainThread]: Command `dbt run` failed at 11:08:00.449864 after 0.39 seconds
+[0m11:08:00.449864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A90A59DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A90ABA600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020A90B84230>]}
+[0m11:08:00.449864 [debug] [MainThread]: Flushing usage events
+[0m11:08:59.593635 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168F7387740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168F7387680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168F7386B10>]}
+
+
+============================== 11:08:59.600309 | 738e7b82-6a90-45cd-9649-0454ba39675e ==============================
+[0m11:08:59.600309 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:08:59.601976 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m11:08:59.629716 [info ] [MainThread]: dbt version: 1.8.7
+[0m11:08:59.629716 [info ] [MainThread]: python version: 3.12.7
+[0m11:08:59.629716 [info ] [MainThread]: python path: C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\venv\Scripts\python.exe
+[0m11:08:59.629716 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m11:08:59.636549 [info ] [MainThread]: Using profiles dir at C:\Users\habteyes.asfaw\.dbt
+[0m11:08:59.636549 [info ] [MainThread]: Using profiles.yml file at C:\Users\habteyes.asfaw\.dbt\profiles.yml
+[0m11:08:59.642337 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\habteyes.asfaw\10Accadamy\ethiopian-medical-data-warehouse\dbt_project\dbt_project.yml
+[0m11:08:59.821837 [info ] [MainThread]: Configuration:
+[0m11:08:59.821837 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m11:08:59.821837 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:08:59.821837 [info ] [MainThread]: Required dependencies:
+[0m11:08:59.821837 [debug] [MainThread]: Executing "git --help"
+[0m11:08:59.877024 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:08:59.883427 [debug] [MainThread]: STDERR: "b''"
+[0m11:08:59.884210 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:08:59.884210 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m11:08:59.884210 [info ] [MainThread]: [31m1 check failed:[0m
+[0m11:08:59.887984 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'default'
+
+
+[0m11:08:59.891452 [debug] [MainThread]: Command `dbt debug` failed at 11:08:59.891452 after 0.54 seconds
+[0m11:08:59.891452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168F3E28740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168F26D1EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000168F73862D0>]}
+[0m11:08:59.891452 [debug] [MainThread]: Flushing usage events
+[0m11:11:47.253019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF5F021760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF5E533B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF5E5314C0>]}
+
+
+============================== 11:11:47.253019 | 2241640d-1a54-4ad5-a917-31acec688194 ==============================
+[0m11:11:47.253019 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:11:47.253019 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:11:47.581117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF6111FB90>]}
+[0m11:11:47.644764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF62AF5700>]}
+[0m11:11:47.661344 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:11:47.661344 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:11:47.799585 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:11:47.799585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF6341CB90>]}
+[0m11:11:49.712133 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data' (tests\test_cleaned_telegram_data.sql) depends on a node named '../../data/cleaned_telegram_data' in package '' which was not found
+[0m11:11:49.823679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF635C3500>]}
+[0m11:11:50.013781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF6364B3E0>]}
+[0m11:11:50.013781 [info ] [MainThread]: Found 2 models, 9 data tests, 423 macros
+[0m11:11:50.013781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF61169F40>]}
+[0m11:11:50.013781 [info ] [MainThread]: 
+[0m11:11:50.027425 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:11:50.033864 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub'
+[0m11:11:50.374454 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub"
+[0m11:11:50.374454 [debug] [ThreadPool]: On list_EthMedHub: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:11:50.374454 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:11:50.421156 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.046 seconds
+[0m11:11:50.428427 [debug] [ThreadPool]: On list_EthMedHub: Close
+[0m11:11:50.428427 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub_public'
+[0m11:11:50.433659 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:11:50.433659 [debug] [ThreadPool]: On list_EthMedHub_public: BEGIN
+[0m11:11:50.440881 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:11:50.482741 [debug] [ThreadPool]: SQL status: BEGIN in 0.042 seconds
+[0m11:11:50.482741 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:11:50.482741 [debug] [ThreadPool]: On list_EthMedHub_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub_public"} */
+select
+      'EthMedHub' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:11:50.491025 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.007 seconds
+[0m11:11:50.491025 [debug] [ThreadPool]: On list_EthMedHub_public: ROLLBACK
+[0m11:11:50.491025 [debug] [ThreadPool]: On list_EthMedHub_public: Close
+[0m11:11:50.491025 [debug] [MainThread]: Using postgres connection "master"
+[0m11:11:50.491025 [debug] [MainThread]: On master: BEGIN
+[0m11:11:50.491025 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:11:50.565749 [debug] [MainThread]: SQL status: BEGIN in 0.063 seconds
+[0m11:11:50.565749 [debug] [MainThread]: Using postgres connection "master"
+[0m11:11:50.565749 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:11:50.574159 [debug] [MainThread]: SQL status: SELECT 0 in 0.009 seconds
+[0m11:11:50.574159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF63650AD0>]}
+[0m11:11:50.574159 [debug] [MainThread]: On master: ROLLBACK
+[0m11:11:50.574159 [debug] [MainThread]: Using postgres connection "master"
+[0m11:11:50.574159 [debug] [MainThread]: On master: BEGIN
+[0m11:11:50.574159 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m11:11:50.574159 [debug] [MainThread]: On master: COMMIT
+[0m11:11:50.574159 [debug] [MainThread]: Using postgres connection "master"
+[0m11:11:50.574159 [debug] [MainThread]: On master: COMMIT
+[0m11:11:50.589880 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:11:50.592829 [debug] [MainThread]: On master: Close
+[0m11:11:50.592829 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:11:50.592829 [info ] [MainThread]: 
+[0m11:11:50.621562 [debug] [Thread-1 (]: Began running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:11:50.622432 [info ] [Thread-1 (]: 1 of 2 START sql view model public.raw_data .................................... [RUN]
+[0m11:11:50.626678 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.raw_data'
+[0m11:11:50.626678 [debug] [Thread-1 (]: Began compiling node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:11:50.644987 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:11:50.644987 [debug] [Thread-1 (]: Began executing node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:11:50.762972 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:11:50.762972 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:11:50.762972 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: BEGIN
+[0m11:11:50.762972 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:11:50.810093 [debug] [Thread-1 (]: SQL status: BEGIN in 0.055 seconds
+[0m11:11:50.825703 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:11:50.825703 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+
+  create view "EthMedHub"."public"."raw_data__dbt_tmp"
+    
+    
+  as (
+    -- raw_data.sql
+select
+    "Channel Title" as channel_title,
+    "Channel Username" as channel_username,
+    "ID" as id,
+    "Message" as message,
+    "Date" as date,
+    "Media Path" as media_path
+from raw_data_source
+  );
+[0m11:11:50.825703 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "raw_data_source" does not exist
+LINE 15: from raw_data_source
+              ^
+
+[0m11:11:50.825703 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: ROLLBACK
+[0m11:11:50.825703 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: Close
+[0m11:11:50.889292 [debug] [Thread-1 (]: Database Error in model raw_data (models\raw_data.sql)
+  relation "raw_data_source" does not exist
+  LINE 15: from raw_data_source
+                ^
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:11:50.889292 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2241640d-1a54-4ad5-a917-31acec688194', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF637A6480>]}
+[0m11:11:50.889292 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model public.raw_data ........................... [[31mERROR[0m in 0.27s]
+[0m11:11:50.889292 [debug] [Thread-1 (]: Finished running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:11:50.905054 [debug] [Thread-3 (]: Began running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:11:50.905054 [info ] [Thread-3 (]: 2 of 2 SKIP relation public.medical_data ....................................... [[33mSKIP[0m]
+[0m11:11:50.905054 [debug] [Thread-3 (]: Finished running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:11:50.914399 [debug] [MainThread]: Using postgres connection "master"
+[0m11:11:50.914399 [debug] [MainThread]: On master: BEGIN
+[0m11:11:50.918864 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:11:50.994079 [debug] [MainThread]: SQL status: BEGIN in 0.077 seconds
+[0m11:11:50.994079 [debug] [MainThread]: On master: COMMIT
+[0m11:11:50.994079 [debug] [MainThread]: Using postgres connection "master"
+[0m11:11:50.994079 [debug] [MainThread]: On master: COMMIT
+[0m11:11:50.994079 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:11:50.994079 [debug] [MainThread]: On master: Close
+[0m11:11:50.994079 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:11:51.002213 [debug] [MainThread]: Connection 'list_EthMedHub' was properly closed.
+[0m11:11:51.002213 [debug] [MainThread]: Connection 'list_EthMedHub_public' was properly closed.
+[0m11:11:51.002213 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.raw_data' was properly closed.
+[0m11:11:51.002213 [info ] [MainThread]: 
+[0m11:11:51.008204 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 0.98 seconds (0.98s).
+[0m11:11:51.010720 [debug] [MainThread]: Command end result
+[0m11:11:51.090694 [info ] [MainThread]: 
+[0m11:11:51.091544 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:11:51.091544 [info ] [MainThread]: 
+[0m11:11:51.091544 [error] [MainThread]:   Database Error in model raw_data (models\raw_data.sql)
+  relation "raw_data_source" does not exist
+  LINE 15: from raw_data_source
+                ^
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:11:51.098144 [info ] [MainThread]: 
+[0m11:11:51.100814 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m11:11:51.100814 [debug] [MainThread]: Command `dbt run` failed at 11:11:51.100814 after 4.19 seconds
+[0m11:11:51.107592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF6275D550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF636C1730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF61593230>]}
+[0m11:11:51.110936 [debug] [MainThread]: Flushing usage events
+[0m11:15:31.053447 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C764CD06E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C764CD19D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C764CD0800>]}
+
+
+============================== 11:15:31.053447 | a40bc993-0d91-4ba2-9e5e-215ff2f0c626 ==============================
+[0m11:15:31.053447 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:15:31.053447 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:15:31.428721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a40bc993-0d91-4ba2-9e5e-215ff2f0c626', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C76331FAA0>]}
+[0m11:15:31.475552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a40bc993-0d91-4ba2-9e5e-215ff2f0c626', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C763D075F0>]}
+[0m11:15:31.491960 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:15:31.491960 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:15:31.763899 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 3 files changed.
+[0m11:15:31.763899 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://tests\test_cleaned_telegram_data.sql
+[0m11:15:31.763899 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://models\medical_data.sql
+[0m11:15:31.763899 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://models\raw_data.sql
+[0m11:15:32.423659 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data' (tests\test_cleaned_telegram_data.sql) depends on a node named '' in package '' which was not found
+[0m11:15:32.484216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a40bc993-0d91-4ba2-9e5e-215ff2f0c626', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7655B5760>]}
+[0m11:15:32.600775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a40bc993-0d91-4ba2-9e5e-215ff2f0c626', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C765A76A20>]}
+[0m11:15:32.600775 [info ] [MainThread]: Found 2 models, 9 data tests, 423 macros
+[0m11:15:32.600775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a40bc993-0d91-4ba2-9e5e-215ff2f0c626', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C7657B5D30>]}
+[0m11:15:32.600775 [info ] [MainThread]: 
+[0m11:15:32.616405 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:15:32.624670 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub'
+[0m11:15:32.788871 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub"
+[0m11:15:32.788871 [debug] [ThreadPool]: On list_EthMedHub: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:15:32.788871 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:15:32.868568 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.084 seconds
+[0m11:15:32.868568 [debug] [ThreadPool]: On list_EthMedHub: Close
+[0m11:15:32.868568 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub_public'
+[0m11:15:32.898617 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:15:32.898617 [debug] [ThreadPool]: On list_EthMedHub_public: BEGIN
+[0m11:15:32.898617 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:15:32.966555 [debug] [ThreadPool]: SQL status: BEGIN in 0.065 seconds
+[0m11:15:32.966555 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:15:32.966555 [debug] [ThreadPool]: On list_EthMedHub_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub_public"} */
+select
+      'EthMedHub' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:15:32.978072 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.007 seconds
+[0m11:15:32.978072 [debug] [ThreadPool]: On list_EthMedHub_public: ROLLBACK
+[0m11:15:32.978072 [debug] [ThreadPool]: On list_EthMedHub_public: Close
+[0m11:15:32.993796 [debug] [MainThread]: Using postgres connection "master"
+[0m11:15:32.993796 [debug] [MainThread]: On master: BEGIN
+[0m11:15:32.993796 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:15:33.056617 [debug] [MainThread]: SQL status: BEGIN in 0.067 seconds
+[0m11:15:33.056617 [debug] [MainThread]: Using postgres connection "master"
+[0m11:15:33.056617 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:15:33.072346 [debug] [MainThread]: SQL status: SELECT 0 in 0.008 seconds
+[0m11:15:33.072346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a40bc993-0d91-4ba2-9e5e-215ff2f0c626', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C76604F830>]}
+[0m11:15:33.072346 [debug] [MainThread]: On master: ROLLBACK
+[0m11:15:33.072346 [debug] [MainThread]: Using postgres connection "master"
+[0m11:15:33.072346 [debug] [MainThread]: On master: BEGIN
+[0m11:15:33.072346 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m11:15:33.087885 [debug] [MainThread]: On master: COMMIT
+[0m11:15:33.087885 [debug] [MainThread]: Using postgres connection "master"
+[0m11:15:33.087885 [debug] [MainThread]: On master: COMMIT
+[0m11:15:33.087885 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:15:33.087885 [debug] [MainThread]: On master: Close
+[0m11:15:33.087885 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:15:33.087885 [info ] [MainThread]: 
+[0m11:15:33.087885 [debug] [Thread-1 (]: Began running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:15:33.087885 [info ] [Thread-1 (]: 1 of 2 START sql view model public.raw_data .................................... [RUN]
+[0m11:15:33.105120 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.raw_data'
+[0m11:15:33.105120 [debug] [Thread-1 (]: Began compiling node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:15:33.115109 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:15:33.119623 [debug] [Thread-1 (]: Began executing node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:15:33.201849 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:15:33.206895 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:15:33.206895 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: BEGIN
+[0m11:15:33.206895 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:15:33.254656 [debug] [Thread-1 (]: SQL status: BEGIN in 0.060 seconds
+[0m11:15:33.254656 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:15:33.270308 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+
+  create view "EthMedHub"."public"."raw_data__dbt_tmp"
+    
+    
+  as (
+    -- models/raw_data.sql
+select
+    "Channel Title" as channel_title,
+    "Channel Username" as channel_username,
+    "ID" as id,
+    "Message" as message,
+    "Date" as date,
+    "Media Path" as media_path
+from raw_data_source
+  );
+[0m11:15:33.271318 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "raw_data_source" does not exist
+LINE 15: from raw_data_source
+              ^
+
+[0m11:15:33.271318 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: ROLLBACK
+[0m11:15:33.271318 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: Close
+[0m11:15:33.271318 [debug] [Thread-1 (]: Database Error in model raw_data (models\raw_data.sql)
+  relation "raw_data_source" does not exist
+  LINE 15: from raw_data_source
+                ^
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:15:33.271318 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a40bc993-0d91-4ba2-9e5e-215ff2f0c626', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C766025700>]}
+[0m11:15:33.271318 [error] [Thread-1 (]: 1 of 2 ERROR creating sql view model public.raw_data ........................... [[31mERROR[0m in 0.17s]
+[0m11:15:33.286333 [debug] [Thread-1 (]: Finished running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:15:33.286333 [debug] [Thread-3 (]: Began running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:15:33.286333 [info ] [Thread-3 (]: 2 of 2 SKIP relation public.medical_data ....................................... [[33mSKIP[0m]
+[0m11:15:33.286333 [debug] [Thread-3 (]: Finished running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:15:33.294676 [debug] [MainThread]: Using postgres connection "master"
+[0m11:15:33.297644 [debug] [MainThread]: On master: BEGIN
+[0m11:15:33.297644 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:15:33.352703 [debug] [MainThread]: SQL status: BEGIN in 0.059 seconds
+[0m11:15:33.352703 [debug] [MainThread]: On master: COMMIT
+[0m11:15:33.352703 [debug] [MainThread]: Using postgres connection "master"
+[0m11:15:33.352703 [debug] [MainThread]: On master: COMMIT
+[0m11:15:33.352703 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:15:33.352703 [debug] [MainThread]: On master: Close
+[0m11:15:33.352703 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:15:33.352703 [debug] [MainThread]: Connection 'list_EthMedHub' was properly closed.
+[0m11:15:33.352703 [debug] [MainThread]: Connection 'list_EthMedHub_public' was properly closed.
+[0m11:15:33.352703 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.raw_data' was properly closed.
+[0m11:15:33.352703 [info ] [MainThread]: 
+[0m11:15:33.365836 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 0.74 seconds (0.74s).
+[0m11:15:33.366606 [debug] [MainThread]: Command end result
+[0m11:15:33.417373 [info ] [MainThread]: 
+[0m11:15:33.417373 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:15:33.417373 [info ] [MainThread]: 
+[0m11:15:33.417373 [error] [MainThread]:   Database Error in model raw_data (models\raw_data.sql)
+  relation "raw_data_source" does not exist
+  LINE 15: from raw_data_source
+                ^
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:15:33.417373 [info ] [MainThread]: 
+[0m11:15:33.428396 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=1 TOTAL=2
+[0m11:15:33.434123 [debug] [MainThread]: Command `dbt run` failed at 11:15:33.434123 after 2.71 seconds
+[0m11:15:33.434123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C765ACF650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C76570A360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C765794EC0>]}
+[0m11:15:33.434123 [debug] [MainThread]: Flushing usage events
+[0m11:17:12.441141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B109E690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8AD853EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B0400650>]}
+
+
+============================== 11:17:12.441141 | 6cd3adc2-3b58-49aa-9183-ecc0b31f8780 ==============================
+[0m11:17:12.441141 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:17:12.456201 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:17:12.899157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B1EA5610>]}
+[0m11:17:12.993783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8AEA08B00>]}
+[0m11:17:12.993783 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:17:13.031792 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:17:13.265341 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m11:17:13.265341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B261CB60>]}
+[0m11:17:15.099347 [warn ] [MainThread]: [[33mWARNING[0m]: Test 'test.ethiopianmedicaldatawarehouse.test_cleaned_telegram_data' (tests\test_cleaned_telegram_data.sql) depends on a node named '' in package '' which was not found
+[0m11:17:15.238342 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B261EA20>]}
+[0m11:17:15.378703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B2B7F770>]}
+[0m11:17:15.378703 [info ] [MainThread]: Found 2 models, 9 data tests, 423 macros
+[0m11:17:15.378703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B2759070>]}
+[0m11:17:15.378703 [info ] [MainThread]: 
+[0m11:17:15.378703 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:17:15.395657 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub'
+[0m11:17:15.571759 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub"
+[0m11:17:15.571759 [debug] [ThreadPool]: On list_EthMedHub: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:17:15.571759 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:17:15.619341 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.049 seconds
+[0m11:17:15.630952 [debug] [ThreadPool]: On list_EthMedHub: Close
+[0m11:17:15.630952 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub_public'
+[0m11:17:15.635476 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:17:15.635476 [debug] [ThreadPool]: On list_EthMedHub_public: BEGIN
+[0m11:17:15.635476 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:17:15.682381 [debug] [ThreadPool]: SQL status: BEGIN in 0.046 seconds
+[0m11:17:15.682381 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:17:15.682381 [debug] [ThreadPool]: On list_EthMedHub_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub_public"} */
+select
+      'EthMedHub' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:17:15.698074 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.003 seconds
+[0m11:17:15.698074 [debug] [ThreadPool]: On list_EthMedHub_public: ROLLBACK
+[0m11:17:15.698074 [debug] [ThreadPool]: On list_EthMedHub_public: Close
+[0m11:17:15.698074 [debug] [MainThread]: Using postgres connection "master"
+[0m11:17:15.698074 [debug] [MainThread]: On master: BEGIN
+[0m11:17:15.698074 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:17:15.865922 [debug] [MainThread]: SQL status: BEGIN in 0.167 seconds
+[0m11:17:15.865922 [debug] [MainThread]: Using postgres connection "master"
+[0m11:17:15.865922 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:17:15.881546 [debug] [MainThread]: SQL status: SELECT 0 in 0.006 seconds
+[0m11:17:15.881546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B2FF4800>]}
+[0m11:17:15.881546 [debug] [MainThread]: On master: ROLLBACK
+[0m11:17:15.881546 [debug] [MainThread]: Using postgres connection "master"
+[0m11:17:15.881546 [debug] [MainThread]: On master: BEGIN
+[0m11:17:15.881546 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m11:17:15.881546 [debug] [MainThread]: On master: COMMIT
+[0m11:17:15.881546 [debug] [MainThread]: Using postgres connection "master"
+[0m11:17:15.881546 [debug] [MainThread]: On master: COMMIT
+[0m11:17:15.881546 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:17:15.881546 [debug] [MainThread]: On master: Close
+[0m11:17:15.897059 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:17:15.897059 [info ] [MainThread]: 
+[0m11:17:15.901805 [debug] [Thread-1 (]: Began running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:17:15.901805 [debug] [Thread-2 (]: Began running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:17:15.901805 [info ] [Thread-1 (]: 1 of 2 START sql table model public.medical_data ............................... [RUN]
+[0m11:17:15.911614 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.medical_data'
+[0m11:17:15.913649 [debug] [Thread-1 (]: Began compiling node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:17:15.911614 [info ] [Thread-2 (]: 2 of 2 START sql view model public.raw_data .................................... [RUN]
+[0m11:17:15.924391 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:15.928577 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.raw_data'
+[0m11:17:15.928577 [debug] [Thread-2 (]: Began compiling node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:17:15.931649 [debug] [Thread-2 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:17:15.937230 [debug] [Thread-2 (]: Began executing node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:17:15.931649 [debug] [Thread-1 (]: Began executing node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:17:15.994655 [debug] [Thread-2 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:17:16.011339 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:16.011339 [debug] [Thread-2 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:17:16.011339 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: BEGIN
+[0m11:17:16.011339 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:17:16.011339 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:16.011339 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: BEGIN
+[0m11:17:16.011339 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:17:16.059443 [debug] [Thread-1 (]: SQL status: BEGIN in 0.045 seconds
+[0m11:17:16.059443 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:16.059443 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+
+  
+    
+
+  create  table "EthMedHub"."public"."medical_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/raw_data.sql
+select
+    "Channel Title" as channel_title,
+    "Channel Username" as channel_username,
+    "ID" as id,
+    "Message" as message,
+    "Date" as date,
+    "Media Path" as media_path
+from public.medical_data
+  );
+  
+[0m11:17:16.075083 [debug] [Thread-1 (]: SQL status: SELECT 4560 in 0.023 seconds
+[0m11:17:16.090711 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:16.090711 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+alter table "EthMedHub"."public"."medical_data" rename to "medical_data__dbt_backup"
+[0m11:17:16.090711 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m11:17:16.106425 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:16.106425 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+alter table "EthMedHub"."public"."medical_data__dbt_tmp" rename to "medical_data"
+[0m11:17:16.106425 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m11:17:16.157733 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: COMMIT
+[0m11:17:16.157733 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:16.157733 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: COMMIT
+[0m11:17:16.169751 [debug] [Thread-2 (]: SQL status: BEGIN in 0.158 seconds
+[0m11:17:16.169751 [debug] [Thread-2 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:17:16.169751 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+
+  create view "EthMedHub"."public"."raw_data__dbt_tmp"
+    
+    
+  as (
+    -- models/raw_data.sql
+select
+    "Channel Title" as channel_title,
+    "Channel Username" as channel_username,
+    "ID" as id,
+    "Message" as message,
+    "Date" as date,
+    "Media Path" as media_path
+from raw_data_source
+  );
+[0m11:17:16.169751 [debug] [Thread-2 (]: Postgres adapter: Postgres error: relation "raw_data_source" does not exist
+LINE 15: from raw_data_source
+              ^
+
+[0m11:17:16.169751 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: ROLLBACK
+[0m11:17:16.169751 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: Close
+[0m11:17:16.169751 [debug] [Thread-1 (]: SQL status: COMMIT in 0.015 seconds
+[0m11:17:16.187466 [debug] [Thread-1 (]: Applying DROP to: "EthMedHub"."public"."medical_data__dbt_backup"
+[0m11:17:16.187466 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:17:16.187466 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+drop table if exists "EthMedHub"."public"."medical_data__dbt_backup" cascade
+[0m11:17:16.201472 [debug] [Thread-2 (]: Database Error in model raw_data (models\raw_data.sql)
+  relation "raw_data_source" does not exist
+  LINE 15: from raw_data_source
+                ^
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:17:16.201472 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B261C890>]}
+[0m11:17:16.205965 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.007 seconds
+[0m11:17:16.205965 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: Close
+[0m11:17:16.205965 [error] [Thread-2 (]: 2 of 2 ERROR creating sql view model public.raw_data ........................... [[31mERROR[0m in 0.27s]
+[0m11:17:16.205965 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6cd3adc2-3b58-49aa-9183-ecc0b31f8780', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8AEA32ED0>]}
+[0m11:17:16.205965 [debug] [Thread-2 (]: Finished running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:17:16.205965 [info ] [Thread-1 (]: 1 of 2 OK created sql table model public.medical_data .......................... [[32mSELECT 4560[0m in 0.29s]
+[0m11:17:16.215292 [debug] [Thread-1 (]: Finished running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:17:16.215292 [debug] [MainThread]: Using postgres connection "master"
+[0m11:17:16.215292 [debug] [MainThread]: On master: BEGIN
+[0m11:17:16.217982 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:17:16.248336 [debug] [MainThread]: SQL status: BEGIN in 0.037 seconds
+[0m11:17:16.255373 [debug] [MainThread]: On master: COMMIT
+[0m11:17:16.255373 [debug] [MainThread]: Using postgres connection "master"
+[0m11:17:16.255373 [debug] [MainThread]: On master: COMMIT
+[0m11:17:16.255373 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:17:16.255373 [debug] [MainThread]: On master: Close
+[0m11:17:16.255373 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:17:16.255373 [debug] [MainThread]: Connection 'list_EthMedHub' was properly closed.
+[0m11:17:16.255373 [debug] [MainThread]: Connection 'list_EthMedHub_public' was properly closed.
+[0m11:17:16.255373 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.medical_data' was properly closed.
+[0m11:17:16.255373 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.raw_data' was properly closed.
+[0m11:17:16.255373 [info ] [MainThread]: 
+[0m11:17:16.261627 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 0.88 seconds (0.88s).
+[0m11:17:16.261627 [debug] [MainThread]: Command end result
+[0m11:17:16.307144 [info ] [MainThread]: 
+[0m11:17:16.307144 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:17:16.307144 [info ] [MainThread]: 
+[0m11:17:16.320262 [error] [MainThread]:   Database Error in model raw_data (models\raw_data.sql)
+  relation "raw_data_source" does not exist
+  LINE 15: from raw_data_source
+                ^
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:17:16.320262 [info ] [MainThread]: 
+[0m11:17:16.320262 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+[0m11:17:16.327779 [debug] [MainThread]: Command `dbt run` failed at 11:17:16.327779 after 4.23 seconds
+[0m11:17:16.327779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B1753950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8AD6DF320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8B1E34EF0>]}
+[0m11:17:16.333694 [debug] [MainThread]: Flushing usage events
+[0m11:18:28.697041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A8785A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A87840E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A87840B0>]}
+
+
+============================== 11:18:28.697041 | 7cd3b8d1-00fb-4488-a7c4-183910d43fc6 ==============================
+[0m11:18:28.697041 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:18:28.697041 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:18:29.040802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A5F1FBF0>]}
+[0m11:18:29.166794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A73DFC80>]}
+[0m11:18:29.166794 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:18:29.198747 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:18:29.447626 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:18:29.447626 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://models\raw_data.sql
+[0m11:18:29.911719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A91FEB70>]}
+[0m11:18:30.085634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A8D69280>]}
+[0m11:18:30.085634 [info ] [MainThread]: Found 2 models, 9 data tests, 423 macros
+[0m11:18:30.085634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A91FB7D0>]}
+[0m11:18:30.085634 [info ] [MainThread]: 
+[0m11:18:30.085634 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:18:30.109458 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub'
+[0m11:18:30.256429 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub"
+[0m11:18:30.256429 [debug] [ThreadPool]: On list_EthMedHub: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:18:30.256429 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:18:30.319075 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.066 seconds
+[0m11:18:30.319075 [debug] [ThreadPool]: On list_EthMedHub: Close
+[0m11:18:30.319075 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub_public'
+[0m11:18:30.334725 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:18:30.334725 [debug] [ThreadPool]: On list_EthMedHub_public: BEGIN
+[0m11:18:30.350356 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:18:30.397762 [debug] [ThreadPool]: SQL status: BEGIN in 0.059 seconds
+[0m11:18:30.397762 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:18:30.397762 [debug] [ThreadPool]: On list_EthMedHub_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub_public"} */
+select
+      'EthMedHub' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:18:30.421670 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.010 seconds
+[0m11:18:30.421670 [debug] [ThreadPool]: On list_EthMedHub_public: ROLLBACK
+[0m11:18:30.421670 [debug] [ThreadPool]: On list_EthMedHub_public: Close
+[0m11:18:30.433822 [debug] [MainThread]: Using postgres connection "master"
+[0m11:18:30.433822 [debug] [MainThread]: On master: BEGIN
+[0m11:18:30.433822 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:18:30.477221 [debug] [MainThread]: SQL status: BEGIN in 0.048 seconds
+[0m11:18:30.477221 [debug] [MainThread]: Using postgres connection "master"
+[0m11:18:30.477221 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:18:30.493707 [debug] [MainThread]: SQL status: SELECT 0 in 0.009 seconds
+[0m11:18:30.493707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A90CE270>]}
+[0m11:18:30.493707 [debug] [MainThread]: On master: ROLLBACK
+[0m11:18:30.493707 [debug] [MainThread]: Using postgres connection "master"
+[0m11:18:30.493707 [debug] [MainThread]: On master: BEGIN
+[0m11:18:30.493707 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m11:18:30.493707 [debug] [MainThread]: On master: COMMIT
+[0m11:18:30.493707 [debug] [MainThread]: Using postgres connection "master"
+[0m11:18:30.493707 [debug] [MainThread]: On master: COMMIT
+[0m11:18:30.493707 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:18:30.493707 [debug] [MainThread]: On master: Close
+[0m11:18:30.493707 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:18:30.493707 [info ] [MainThread]: 
+[0m11:18:30.509404 [debug] [Thread-1 (]: Began running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:18:30.509404 [debug] [Thread-2 (]: Began running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:18:30.509404 [info ] [Thread-1 (]: 1 of 2 START sql table model public.medical_data ............................... [RUN]
+[0m11:18:30.509404 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.medical_data'
+[0m11:18:30.509404 [info ] [Thread-2 (]: 2 of 2 START sql view model public.raw_data .................................... [RUN]
+[0m11:18:30.515082 [debug] [Thread-1 (]: Began compiling node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:18:30.515082 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.raw_data'
+[0m11:18:30.522423 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:18:30.522423 [debug] [Thread-2 (]: Began compiling node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:18:30.522423 [debug] [Thread-2 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:18:30.522423 [debug] [Thread-2 (]: Began executing node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:18:30.533018 [debug] [Thread-1 (]: Began executing node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:18:30.616306 [debug] [Thread-2 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:18:30.625091 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:18:30.625091 [debug] [Thread-2 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:18:30.625091 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: BEGIN
+[0m11:18:30.625091 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:18:30.625091 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:18:30.625091 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: BEGIN
+[0m11:18:30.625091 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:18:30.672376 [debug] [Thread-2 (]: SQL status: BEGIN in 0.055 seconds
+[0m11:18:30.672376 [debug] [Thread-2 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:18:30.672376 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+
+  create view "EthMedHub"."public"."raw_data__dbt_tmp"
+    
+    
+  as (
+    -- models/raw_data.sql
+select
+    "Channel Title" as channel_title,
+    "Channel Username" as channel_username,
+    "ID" as id,
+    "Message" as message,
+    "Date" as date,
+    "Media Path" as media_path
+from public.medical_data
+  );
+[0m11:18:30.687398 [debug] [Thread-2 (]: Postgres adapter: Postgres error: column "Channel Title" does not exist
+LINE 9:     "Channel Title" as channel_title,
+            ^
+HINT:  Perhaps you meant to reference the column "medical_data.channel_title".
+
+[0m11:18:30.687398 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: ROLLBACK
+[0m11:18:30.687398 [debug] [Thread-2 (]: On model.ethiopianmedicaldatawarehouse.raw_data: Close
+[0m11:18:30.687398 [debug] [Thread-1 (]: SQL status: BEGIN in 0.063 seconds
+[0m11:18:30.687398 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:18:30.687398 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+
+  
+    
+
+  create  table "EthMedHub"."public"."medical_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/raw_data.sql
+select
+    "Channel Title" as channel_title,
+    "Channel Username" as channel_username,
+    "ID" as id,
+    "Message" as message,
+    "Date" as date,
+    "Media Path" as media_path
+from public.medical_data
+  );
+  
+[0m11:18:30.687398 [debug] [Thread-1 (]: Postgres adapter: Postgres error: column "Channel Title" does not exist
+LINE 14:     "Channel Title" as channel_title,
+             ^
+HINT:  Perhaps you meant to reference the column "medical_data.channel_title".
+
+[0m11:18:30.687398 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: ROLLBACK
+[0m11:18:30.687398 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.medical_data: Close
+[0m11:18:30.703040 [debug] [Thread-2 (]: Database Error in model raw_data (models\raw_data.sql)
+  column "Channel Title" does not exist
+  LINE 9:     "Channel Title" as channel_title,
+              ^
+  HINT:  Perhaps you meant to reference the column "medical_data.channel_title".
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:18:30.703040 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A432F980>]}
+[0m11:18:30.703040 [error] [Thread-2 (]: 2 of 2 ERROR creating sql view model public.raw_data ........................... [[31mERROR[0m in 0.19s]
+[0m11:18:30.718746 [debug] [Thread-1 (]: Database Error in model medical_data (models\medical_data.sql)
+  column "Channel Title" does not exist
+  LINE 14:     "Channel Title" as channel_title,
+               ^
+  HINT:  Perhaps you meant to reference the column "medical_data.channel_title".
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\medical_data.sql
+[0m11:18:30.718746 [debug] [Thread-2 (]: Finished running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:18:30.718746 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7cd3b8d1-00fb-4488-a7c4-183910d43fc6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A9A3CD40>]}
+[0m11:18:30.718746 [error] [Thread-1 (]: 1 of 2 ERROR creating sql table model public.medical_data ...................... [[31mERROR[0m in 0.21s]
+[0m11:18:30.718746 [debug] [Thread-1 (]: Finished running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:18:30.732080 [debug] [MainThread]: Using postgres connection "master"
+[0m11:18:30.733525 [debug] [MainThread]: On master: BEGIN
+[0m11:18:30.735345 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:18:30.813001 [debug] [MainThread]: SQL status: BEGIN in 0.078 seconds
+[0m11:18:30.813001 [debug] [MainThread]: On master: COMMIT
+[0m11:18:30.813001 [debug] [MainThread]: Using postgres connection "master"
+[0m11:18:30.817783 [debug] [MainThread]: On master: COMMIT
+[0m11:18:30.817783 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:18:30.817783 [debug] [MainThread]: On master: Close
+[0m11:18:30.821309 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:18:30.821309 [debug] [MainThread]: Connection 'list_EthMedHub' was properly closed.
+[0m11:18:30.821309 [debug] [MainThread]: Connection 'list_EthMedHub_public' was properly closed.
+[0m11:18:30.821309 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.medical_data' was properly closed.
+[0m11:18:30.821309 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.raw_data' was properly closed.
+[0m11:18:30.821309 [info ] [MainThread]: 
+[0m11:18:30.821309 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 0.74 seconds (0.74s).
+[0m11:18:30.829342 [debug] [MainThread]: Command end result
+[0m11:18:30.901208 [info ] [MainThread]: 
+[0m11:18:30.901208 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m11:18:30.901208 [info ] [MainThread]: 
+[0m11:18:30.901208 [error] [MainThread]:   Database Error in model raw_data (models\raw_data.sql)
+  column "Channel Title" does not exist
+  LINE 9:     "Channel Title" as channel_title,
+              ^
+  HINT:  Perhaps you meant to reference the column "medical_data.channel_title".
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\raw_data.sql
+[0m11:18:30.908724 [info ] [MainThread]: 
+[0m11:18:30.910978 [error] [MainThread]:   Database Error in model medical_data (models\medical_data.sql)
+  column "Channel Title" does not exist
+  LINE 14:     "Channel Title" as channel_title,
+               ^
+  HINT:  Perhaps you meant to reference the column "medical_data.channel_title".
+  compiled code at target\run\ethiopianmedicaldatawarehouse\models\medical_data.sql
+[0m11:18:30.910978 [info ] [MainThread]: 
+[0m11:18:30.916753 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+[0m11:18:30.916753 [debug] [MainThread]: Command `dbt run` failed at 11:18:30.916753 after 2.57 seconds
+[0m11:18:30.916753 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A8659D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A915FE00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5A8602300>]}
+[0m11:18:30.916753 [debug] [MainThread]: Flushing usage events
+[0m11:20:56.074985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5399EB0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53C5C3440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53D259970>]}
+
+
+============================== 11:20:56.089469 | b7e3d5a5-fe87-466c-8e84-75622987c334 ==============================
+[0m11:20:56.089469 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:20:56.089469 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:20:56.503692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53D5FDD30>]}
+[0m11:20:56.615037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53D0B1E20>]}
+[0m11:20:56.615037 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:20:56.622045 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:20:56.910955 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m11:20:56.910955 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://models\medical_data.sql
+[0m11:20:56.910955 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://models\raw_data.sql
+[0m11:20:57.464146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53E1E9820>]}
+[0m11:20:57.589376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53E249370>]}
+[0m11:20:57.589376 [info ] [MainThread]: Found 2 models, 9 data tests, 423 macros
+[0m11:20:57.589376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53DDF18E0>]}
+[0m11:20:57.589376 [info ] [MainThread]: 
+[0m11:20:57.589376 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:20:57.607868 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub'
+[0m11:20:57.708541 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub"
+[0m11:20:57.708541 [debug] [ThreadPool]: On list_EthMedHub: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:20:57.708541 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:20:57.756039 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.041 seconds
+[0m11:20:57.756039 [debug] [ThreadPool]: On list_EthMedHub: Close
+[0m11:20:57.756039 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub_public'
+[0m11:20:57.771813 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:20:57.771813 [debug] [ThreadPool]: On list_EthMedHub_public: BEGIN
+[0m11:20:57.771813 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:20:57.819478 [debug] [ThreadPool]: SQL status: BEGIN in 0.044 seconds
+[0m11:20:57.819478 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:20:57.819478 [debug] [ThreadPool]: On list_EthMedHub_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub_public"} */
+select
+      'EthMedHub' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:20:57.819478 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.005 seconds
+[0m11:20:57.819478 [debug] [ThreadPool]: On list_EthMedHub_public: ROLLBACK
+[0m11:20:57.819478 [debug] [ThreadPool]: On list_EthMedHub_public: Close
+[0m11:20:57.835120 [debug] [MainThread]: Using postgres connection "master"
+[0m11:20:57.835120 [debug] [MainThread]: On master: BEGIN
+[0m11:20:57.840725 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:20:57.882955 [debug] [MainThread]: SQL status: BEGIN in 0.044 seconds
+[0m11:20:57.882955 [debug] [MainThread]: Using postgres connection "master"
+[0m11:20:57.882955 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:20:57.882955 [debug] [MainThread]: SQL status: SELECT 0 in 0.003 seconds
+[0m11:20:57.882955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C539F9BAA0>]}
+[0m11:20:57.882955 [debug] [MainThread]: On master: ROLLBACK
+[0m11:20:57.882955 [debug] [MainThread]: Using postgres connection "master"
+[0m11:20:57.882955 [debug] [MainThread]: On master: BEGIN
+[0m11:20:57.882955 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m11:20:57.882955 [debug] [MainThread]: On master: COMMIT
+[0m11:20:57.882955 [debug] [MainThread]: Using postgres connection "master"
+[0m11:20:57.882955 [debug] [MainThread]: On master: COMMIT
+[0m11:20:57.882955 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:20:57.882955 [debug] [MainThread]: On master: Close
+[0m11:20:57.882955 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:20:57.882955 [info ] [MainThread]: 
+[0m11:20:57.899220 [debug] [Thread-1 (]: Began running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:20:57.899220 [info ] [Thread-1 (]: 1 of 2 START sql view model public.raw_data .................................... [RUN]
+[0m11:20:57.899220 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.raw_data'
+[0m11:20:57.910287 [debug] [Thread-1 (]: Began compiling node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:20:57.922647 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:20:57.926675 [debug] [Thread-1 (]: Began executing node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:20:58.016814 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:20:58.016814 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:20:58.016814 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: BEGIN
+[0m11:20:58.016814 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:20:58.094866 [debug] [Thread-1 (]: SQL status: BEGIN in 0.073 seconds
+[0m11:20:58.094866 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:20:58.094866 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+
+  create view "EthMedHub"."public"."raw_data__dbt_tmp"
+    
+    
+  as (
+    -- models/raw_data.sql
+select
+    id,
+    date,
+    channel_title,
+    channel_username,
+    message,
+    media_path
+from public.medical_data
+  );
+[0m11:20:58.110405 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.011 seconds
+[0m11:20:58.126035 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:20:58.126035 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+alter table "EthMedHub"."public"."raw_data__dbt_tmp" rename to "raw_data"
+[0m11:20:58.142088 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m11:20:58.174021 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: COMMIT
+[0m11:20:58.174021 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:20:58.174021 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: COMMIT
+[0m11:20:58.198061 [debug] [Thread-1 (]: SQL status: COMMIT in 0.012 seconds
+[0m11:20:58.212505 [debug] [Thread-1 (]: Applying DROP to: "EthMedHub"."public"."raw_data__dbt_backup"
+[0m11:20:58.222042 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:20:58.222042 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+drop view if exists "EthMedHub"."public"."raw_data__dbt_backup" cascade
+[0m11:20:58.222042 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m11:20:58.222042 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: Close
+[0m11:20:58.237700 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C539F32E70>]}
+[0m11:20:58.241229 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.raw_data ............................... [[32mCREATE VIEW[0m in 0.34s]
+[0m11:20:58.241229 [debug] [Thread-1 (]: Finished running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:20:58.241229 [debug] [Thread-3 (]: Began running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:20:58.241229 [info ] [Thread-3 (]: 2 of 2 START sql table model public.medical_data ............................... [RUN]
+[0m11:20:58.241229 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.medical_data'
+[0m11:20:58.252482 [debug] [Thread-3 (]: Began compiling node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:20:58.258544 [debug] [Thread-3 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.262580 [debug] [Thread-3 (]: Began executing node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:20:58.316945 [debug] [Thread-3 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.326978 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.328932 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: BEGIN
+[0m11:20:58.329433 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:20:58.382975 [debug] [Thread-3 (]: SQL status: BEGIN in 0.061 seconds
+[0m11:20:58.382975 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.382975 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+
+  
+    
+
+  create  table "EthMedHub"."public"."medical_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/medical_data.sql
+with raw as (
+    select
+        id,
+        date,
+        channel_title,
+        channel_username,
+        message,
+        media_path
+    from "EthMedHub"."public"."raw_data"
+)
+
+select * from raw
+  );
+  
+[0m11:20:58.429851 [debug] [Thread-3 (]: SQL status: SELECT 4560 in 0.038 seconds
+[0m11:20:58.429851 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.429851 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+alter table "EthMedHub"."public"."medical_data" rename to "medical_data__dbt_backup"
+[0m11:20:58.429851 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m11:20:58.441951 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.441951 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+alter table "EthMedHub"."public"."medical_data__dbt_tmp" rename to "medical_data"
+[0m11:20:58.441951 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m11:20:58.445976 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: COMMIT
+[0m11:20:58.445976 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.445976 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: COMMIT
+[0m11:20:58.492973 [debug] [Thread-3 (]: SQL status: COMMIT in 0.048 seconds
+[0m11:20:58.492973 [debug] [Thread-3 (]: Applying DROP to: "EthMedHub"."public"."medical_data__dbt_backup"
+[0m11:20:58.508601 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:20:58.508601 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+drop table if exists "EthMedHub"."public"."medical_data__dbt_backup" cascade
+[0m11:20:58.524219 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.007 seconds
+[0m11:20:58.525359 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: Close
+[0m11:20:58.525359 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b7e3d5a5-fe87-466c-8e84-75622987c334', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53E7C3440>]}
+[0m11:20:58.530618 [info ] [Thread-3 (]: 2 of 2 OK created sql table model public.medical_data .......................... [[32mSELECT 4560[0m in 0.28s]
+[0m11:20:58.534808 [debug] [Thread-3 (]: Finished running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:20:58.534808 [debug] [MainThread]: Using postgres connection "master"
+[0m11:20:58.534808 [debug] [MainThread]: On master: BEGIN
+[0m11:20:58.540323 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:20:58.613016 [debug] [MainThread]: SQL status: BEGIN in 0.078 seconds
+[0m11:20:58.619633 [debug] [MainThread]: On master: COMMIT
+[0m11:20:58.619633 [debug] [MainThread]: Using postgres connection "master"
+[0m11:20:58.619633 [debug] [MainThread]: On master: COMMIT
+[0m11:20:58.619633 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:20:58.619633 [debug] [MainThread]: On master: Close
+[0m11:20:58.619633 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:20:58.619633 [debug] [MainThread]: Connection 'list_EthMedHub' was properly closed.
+[0m11:20:58.619633 [debug] [MainThread]: Connection 'list_EthMedHub_public' was properly closed.
+[0m11:20:58.627672 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.raw_data' was properly closed.
+[0m11:20:58.628751 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.medical_data' was properly closed.
+[0m11:20:58.629334 [info ] [MainThread]: 
+[0m11:20:58.629334 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 1.04 seconds (1.04s).
+[0m11:20:58.629334 [debug] [MainThread]: Command end result
+[0m11:20:58.698947 [info ] [MainThread]: 
+[0m11:20:58.698947 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:20:58.698947 [info ] [MainThread]: 
+[0m11:20:58.698947 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m11:20:58.712687 [debug] [MainThread]: Command `dbt run` succeeded at 11:20:58.712687 after 3.05 seconds
+[0m11:20:58.712687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53E26FFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53BAD44D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53BAD6DE0>]}
+[0m11:20:58.719809 [debug] [MainThread]: Flushing usage events
+[0m11:48:29.344941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC0BFA2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CBF31E3F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CBF31E6C0>]}
+
+
+============================== 11:48:29.360513 | 141e1c14-787c-46e6-9cb9-a64c9c555095 ==============================
+[0m11:48:29.360513 [info ] [MainThread]: Running with dbt=1.8.7
+[0m11:48:29.360513 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\habteyes.asfaw\\.dbt', 'log_path': 'C:\\Users\\habteyes.asfaw\\10Accadamy\\ethiopian-medical-data-warehouse\\dbt_project\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m11:48:29.806720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CBF31FBF0>]}
+[0m11:48:29.932862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CBFDC25D0>]}
+[0m11:48:29.936673 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m11:48:29.956462 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m11:48:30.180468 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:48:30.180468 [debug] [MainThread]: Partial parsing: updated file: ethiopianmedicaldatawarehouse://tests\test_cleaned_telegram_data.sql
+[0m11:48:30.384273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC17758E0>]}
+[0m11:48:30.605511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC179A450>]}
+[0m11:48:30.605511 [info ] [MainThread]: Found 2 models, 10 data tests, 423 macros
+[0m11:48:30.605511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC1738E60>]}
+[0m11:48:30.621236 [info ] [MainThread]: 
+[0m11:48:30.621236 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:48:30.625343 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub'
+[0m11:48:30.773719 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub"
+[0m11:48:30.773719 [debug] [ThreadPool]: On list_EthMedHub: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:48:30.789341 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:48:30.978367 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.196 seconds
+[0m11:48:30.978367 [debug] [ThreadPool]: On list_EthMedHub: Close
+[0m11:48:30.996690 [debug] [ThreadPool]: Acquiring new postgres connection 'list_EthMedHub_public'
+[0m11:48:31.010568 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:48:31.010568 [debug] [ThreadPool]: On list_EthMedHub_public: BEGIN
+[0m11:48:31.010568 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:48:31.097537 [debug] [ThreadPool]: SQL status: BEGIN in 0.081 seconds
+[0m11:48:31.097537 [debug] [ThreadPool]: Using postgres connection "list_EthMedHub_public"
+[0m11:48:31.097537 [debug] [ThreadPool]: On list_EthMedHub_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "list_EthMedHub_public"} */
+select
+      'EthMedHub' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'EthMedHub' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:48:31.104659 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.010 seconds
+[0m11:48:31.113700 [debug] [ThreadPool]: On list_EthMedHub_public: ROLLBACK
+[0m11:48:31.113700 [debug] [ThreadPool]: On list_EthMedHub_public: Close
+[0m11:48:31.129348 [debug] [MainThread]: Using postgres connection "master"
+[0m11:48:31.129348 [debug] [MainThread]: On master: BEGIN
+[0m11:48:31.129348 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:48:31.192051 [debug] [MainThread]: SQL status: BEGIN in 0.066 seconds
+[0m11:48:31.192051 [debug] [MainThread]: Using postgres connection "master"
+[0m11:48:31.192051 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:48:31.208175 [debug] [MainThread]: SQL status: SELECT 0 in 0.009 seconds
+[0m11:48:31.208175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CBD79BAD0>]}
+[0m11:48:31.208175 [debug] [MainThread]: On master: ROLLBACK
+[0m11:48:31.208175 [debug] [MainThread]: Using postgres connection "master"
+[0m11:48:31.208175 [debug] [MainThread]: On master: BEGIN
+[0m11:48:31.208175 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m11:48:31.208175 [debug] [MainThread]: On master: COMMIT
+[0m11:48:31.208175 [debug] [MainThread]: Using postgres connection "master"
+[0m11:48:31.224129 [debug] [MainThread]: On master: COMMIT
+[0m11:48:31.224129 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:48:31.224129 [debug] [MainThread]: On master: Close
+[0m11:48:31.224129 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:48:31.224129 [info ] [MainThread]: 
+[0m11:48:31.244549 [debug] [Thread-1 (]: Began running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:48:31.244669 [info ] [Thread-1 (]: 1 of 2 START sql view model public.raw_data .................................... [RUN]
+[0m11:48:31.248182 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.raw_data'
+[0m11:48:31.251325 [debug] [Thread-1 (]: Began compiling node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:48:31.273459 [debug] [Thread-1 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:48:31.273459 [debug] [Thread-1 (]: Began executing node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:48:31.367993 [debug] [Thread-1 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:48:31.367993 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:48:31.367993 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: BEGIN
+[0m11:48:31.367993 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:48:31.447088 [debug] [Thread-1 (]: SQL status: BEGIN in 0.067 seconds
+[0m11:48:31.447088 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:48:31.447088 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+
+  create view "EthMedHub"."public"."raw_data__dbt_tmp"
+    
+    
+  as (
+    -- models/raw_data.sql
+select
+    id,
+    date,
+    channel_title,
+    channel_username,
+    message,
+    media_path
+from public.medical_data
+  );
+[0m11:48:31.447088 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m11:48:31.462645 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:48:31.462645 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+alter table "EthMedHub"."public"."raw_data__dbt_tmp" rename to "raw_data"
+[0m11:48:31.478272 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m11:48:31.509641 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: COMMIT
+[0m11:48:31.509641 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:48:31.509641 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: COMMIT
+[0m11:48:31.535118 [debug] [Thread-1 (]: SQL status: COMMIT in 0.013 seconds
+[0m11:48:31.543225 [debug] [Thread-1 (]: Applying DROP to: "EthMedHub"."public"."raw_data__dbt_backup"
+[0m11:48:31.551564 [debug] [Thread-1 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.raw_data"
+[0m11:48:31.551564 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.raw_data"} */
+drop view if exists "EthMedHub"."public"."raw_data__dbt_backup" cascade
+[0m11:48:31.551564 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m11:48:31.551564 [debug] [Thread-1 (]: On model.ethiopianmedicaldatawarehouse.raw_data: Close
+[0m11:48:31.551564 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC1B1F890>]}
+[0m11:48:31.567272 [info ] [Thread-1 (]: 1 of 2 OK created sql view model public.raw_data ............................... [[32mCREATE VIEW[0m in 0.31s]
+[0m11:48:31.567272 [debug] [Thread-1 (]: Finished running node model.ethiopianmedicaldatawarehouse.raw_data
+[0m11:48:31.567272 [debug] [Thread-3 (]: Began running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:48:31.567272 [info ] [Thread-3 (]: 2 of 2 START sql table model public.medical_data ............................... [RUN]
+[0m11:48:31.567272 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.ethiopianmedicaldatawarehouse.medical_data'
+[0m11:48:31.577965 [debug] [Thread-3 (]: Began compiling node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:48:31.586917 [debug] [Thread-3 (]: Writing injected SQL for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.588544 [debug] [Thread-3 (]: Began executing node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:48:31.622521 [debug] [Thread-3 (]: Writing runtime sql for node "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.622521 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.626534 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: BEGIN
+[0m11:48:31.626534 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:48:31.659131 [debug] [Thread-3 (]: SQL status: BEGIN in 0.038 seconds
+[0m11:48:31.659131 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.667140 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+
+  
+    
+
+  create  table "EthMedHub"."public"."medical_data__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- models/medical_data.sql
+with raw as (
+    select
+        id,
+        date,
+        channel_title,
+        channel_username,
+        message,
+        media_path
+    from "EthMedHub"."public"."raw_data"
+)
+
+select * from raw
+  );
+  
+[0m11:48:31.691439 [debug] [Thread-3 (]: SQL status: SELECT 4560 in 0.025 seconds
+[0m11:48:31.691439 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.691439 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+alter table "EthMedHub"."public"."medical_data" rename to "medical_data__dbt_backup"
+[0m11:48:31.691439 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m11:48:31.691439 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.691439 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+alter table "EthMedHub"."public"."medical_data__dbt_tmp" rename to "medical_data"
+[0m11:48:31.705457 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m11:48:31.707558 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: COMMIT
+[0m11:48:31.707558 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.707558 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: COMMIT
+[0m11:48:31.754561 [debug] [Thread-3 (]: SQL status: COMMIT in 0.044 seconds
+[0m11:48:31.754561 [debug] [Thread-3 (]: Applying DROP to: "EthMedHub"."public"."medical_data__dbt_backup"
+[0m11:48:31.770168 [debug] [Thread-3 (]: Using postgres connection "model.ethiopianmedicaldatawarehouse.medical_data"
+[0m11:48:31.770168 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "default", "target_name": "dev", "node_id": "model.ethiopianmedicaldatawarehouse.medical_data"} */
+drop table if exists "EthMedHub"."public"."medical_data__dbt_backup" cascade
+[0m11:48:31.785699 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.008 seconds
+[0m11:48:31.785699 [debug] [Thread-3 (]: On model.ethiopianmedicaldatawarehouse.medical_data: Close
+[0m11:48:31.785699 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '141e1c14-787c-46e6-9cb9-a64c9c555095', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC1BE8DA0>]}
+[0m11:48:31.785699 [info ] [Thread-3 (]: 2 of 2 OK created sql table model public.medical_data .......................... [[32mSELECT 4560[0m in 0.22s]
+[0m11:48:31.785699 [debug] [Thread-3 (]: Finished running node model.ethiopianmedicaldatawarehouse.medical_data
+[0m11:48:31.794914 [debug] [MainThread]: Using postgres connection "master"
+[0m11:48:31.794914 [debug] [MainThread]: On master: BEGIN
+[0m11:48:31.794914 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:48:31.877258 [debug] [MainThread]: SQL status: BEGIN in 0.076 seconds
+[0m11:48:31.879036 [debug] [MainThread]: On master: COMMIT
+[0m11:48:31.880102 [debug] [MainThread]: Using postgres connection "master"
+[0m11:48:31.881246 [debug] [MainThread]: On master: COMMIT
+[0m11:48:31.882349 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m11:48:31.882349 [debug] [MainThread]: On master: Close
+[0m11:48:31.885578 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:48:31.886113 [debug] [MainThread]: Connection 'list_EthMedHub' was properly closed.
+[0m11:48:31.887129 [debug] [MainThread]: Connection 'list_EthMedHub_public' was properly closed.
+[0m11:48:31.887129 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.raw_data' was properly closed.
+[0m11:48:31.887129 [debug] [MainThread]: Connection 'model.ethiopianmedicaldatawarehouse.medical_data' was properly closed.
+[0m11:48:31.887129 [info ] [MainThread]: 
+[0m11:48:31.887129 [info ] [MainThread]: Finished running 1 view model, 1 table model in 0 hours 0 minutes and 1.27 seconds (1.27s).
+[0m11:48:31.887129 [debug] [MainThread]: Command end result
+[0m11:48:31.963421 [info ] [MainThread]: 
+[0m11:48:31.968992 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:48:31.968992 [info ] [MainThread]: 
+[0m11:48:31.971590 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m11:48:31.976759 [debug] [MainThread]: Command `dbt run` succeeded at 11:48:31.976759 after 3.09 seconds
+[0m11:48:31.979919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC0CA7FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC179C740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029CC00D25D0>]}
+[0m11:48:31.979919 [debug] [MainThread]: Flushing usage events
