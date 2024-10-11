@@ -1,3 +1,3 @@
 select *
-from {{ ref('../../data/cleaned_telegram_data') }}
+from {{ ref('medical_data') }}
 where name is null;
