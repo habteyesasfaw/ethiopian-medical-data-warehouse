@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: medical_data
+    description: "This table contains the cleaned data on Ethiopian medical businesses scraped from Telegram channels."
+    columns:
+      - name: channel_title
+        description: "Title of the Telegram channel."
+        data_tests:
+          - not_null
+          - unique
+      - name: channel_username
+        description: "Username of the Telegram channel."
+        data_tests:
+          - not_null
+          - unique
+      - name: id
+        description: "Unique ID of the message."
+        data_tests:
+          - not_null
+          - unique
+      - name: message
+        description: "Content of the message."
+        data_tests:
+          - not_null
+      - name: date
+        description: "Date when the message was posted."
+        data_tests:
+          - not_null
+      - name: media_path
+        description: "Path to the media associated with the message."
+        data_tests:
+          - not_null
+
+tests:
+  - name: unique_medical_data
+    description: "Ensure no duplicates exist in the medical_data table."
+    query: |
+      SELECT id
+      FROM {{ ref('medical_data') }}
+      GROUP BY id
+      HAVING COUNT(*) > 1
+
+  - name: no_null_dates
+    description: "Ensure no null values in the date column."
+    query: |
+      SELECT *
+      FROM {{ ref('medical_data') }}
+      WHERE date IS NULL
