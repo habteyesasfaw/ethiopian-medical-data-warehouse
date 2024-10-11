@@ -21,12 +21,7 @@ data/
 *.xlsx
 data/photos/
 *.jpg
-#Model
-models/
-*.json
-*.safetensors
-*.model
-*.json
+
 
 
 
@@ -36,8 +31,7 @@ reports/
 *.html
 *.png
 
-models/
-*.pkl
+
 
 # IDE and editor configurations
 .vscode/
