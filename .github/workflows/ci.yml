@@ -1,0 +1,33 @@
+name: YOLO Object Detection CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+
+    - name: Install Dependencies
+      run: |
+        pip install torch torchvision
+        pip install opencv-python
+        pip install pytest
+        pip install -r yolov5/requirements.txt  # assuming yolov5 dependencies are listed
+
+    - name: Run Tests
+      run: |
+        pytest tests/test_object_detection.py
