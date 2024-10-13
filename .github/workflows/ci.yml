@@ -1,32 +1,26 @@
-name: YOLO Object Detection CI
+name: Python application
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
-
+    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.9'
 
-    - name: Install Dependencies
+    - name: Install dependencies
       run: |
-        pip install torch torchvision
-        pip install opencv-python
-        pip install pytest
+        python -m pip install --upgrade pip
+        pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic pytest
 
-    - name: Run Tests
-      run: |
-        pytest tests/test_object_detection.py
+    - name: Run tests
+      run: pytest
