@@ -3,7 +3,6 @@ from fastapi.testclient import TestClient
 from fastapi_app.main import app
 
 client = TestClient(app)
-
 def test_create_detection():
     response = client.post("/detections/", json={
         "image_url": "http://example.com/image.jpg",
