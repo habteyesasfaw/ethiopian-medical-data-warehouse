@@ -1,26 +1,31 @@
-name: Python application
+name: FastAPI CI Pipeline
 
 on:
   push:
-    branches:  "task-4" 
+    branches:
+      - task-4
   pull_request:
-    branches:  "main" 
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'
+        python-version: '3.9'  # or the version you're using
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic pytest
+        pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic pytest httpx  # Add httpx here
 
     - name: Run tests
-      run: pytest
+      run: |
+        pytest  # This will run your tests, including the ones using httpx
