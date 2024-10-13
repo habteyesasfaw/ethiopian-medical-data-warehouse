@@ -25,6 +25,7 @@ jobs:
       run: |
         pip install torch torchvision
         pip install opencv-python
+        pip install pytest
 
     - name: Run Tests
       run: |
