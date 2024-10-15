@@ -17,6 +17,6 @@
  pillow
  gunicorn
  pytest
- 
+ httpx
  loguru
  tqdm
