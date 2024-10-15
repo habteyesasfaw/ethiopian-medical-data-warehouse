@@ -1,4 +1,4 @@
-name: FastAPI CI Pipeline
+name: CI
 
 on:
   push:
@@ -12,20 +12,28 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: root
+          POSTGRES_DB: object_detection
+        ports:
+          - 5432:5432
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'  # or the version you're using
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install fastapi uvicorn sqlalchemy psycopg2-binary pydantic pytest httpx  # Add httpx here
+        pip install -r requirements.txt
 
     - name: Run tests
       run: |
-        pytest  # This will run your tests, including the ones using httpx
+        pytest

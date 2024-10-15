@@ -1,8 +1,8 @@
 # main.py
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-import crud, models, schemas
-from database import engine, get_db
+from . import crud, models, schemas
+from .database import engine, get_db
 
 # Create the database tables
 models.Base.metadata.create_all(bind=engine)
@@ -11,7 +11,7 @@ app = FastAPI()
 
 @app.post("/detections/", response_model=schemas.ObjectDetection)
 def create_detection(detection: schemas.ObjectDetectionCreate, db: Session = Depends(get_db)):
-    return crud.create_object_detection(db=db, detection=detection)
+    return crud.create_object_detection(db=db, obj_data=detection)
 
 @app.get("/detections/{detection_id}", response_model=schemas.ObjectDetection)
 def read_detection(detection_id: int, db: Session = Depends(get_db)):

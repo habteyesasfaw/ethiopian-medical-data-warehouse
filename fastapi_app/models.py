@@ -1,12 +1,15 @@
-from sqlalchemy import Column, Integer, String, Float
-from database import Base
+from sqlalchemy import Column, Integer, Float, String
+from .database import Base
 
-# SQLAlchemy model representing the object detection table
-class ObjectDetection(Base):
+class ObjectDetectionResult(Base):
     __tablename__ = "object_detection_results"
     
-    id = Column(Integer, primary_key=True, index=True)
-    image_url = Column(String, index=True)
-    object_class = Column(String)
-    confidence_score = Column(Float)
-    bounding_box = Column(String)  # Store as JSON or a string representing coordinates
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    xmin_value = Column(Float, nullable=False)
+    ymin = Column(Float, nullable=False)
+    xmax_value = Column(Float, nullable=False)
+    ymax = Column(Float, nullable=False)
+    confidence = Column(Float, nullable=False)
+    class_value = Column(Integer, nullable=False)  # 'class' is a reserved word in Python
+    name = Column(String, nullable=False)
+    image = Column(String, nullable=False)
