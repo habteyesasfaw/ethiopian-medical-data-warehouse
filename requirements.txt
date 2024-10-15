@@ -17,6 +17,7 @@
  pillow
  gunicorn
  pytest
- 
+ httpx
  loguru
  tqdm
+ psycopg2
