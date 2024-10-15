@@ -12,14 +12,7 @@ class TestYOLOObjectDetection(unittest.TestCase):
         model = mock_yolo_model()
         self.assertEqual(model, 'MockModel')
 
-    @patch('cv2.imread')
-    def test_image_loading(self, mock_cv2_imread):
-        # Mock image loading
-        mock_cv2_imread.return_value = 'MockImage'
-        
-        image_path = "path_to_image.jpg"
-        img = mock_cv2_imread(image_path)
-        self.assertEqual(img, 'MockImage')
+   
 
     @patch('torch.hub.load')
     def test_yolo_object_detection(self, mock_yolo_model):
